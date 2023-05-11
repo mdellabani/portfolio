@@ -48,7 +48,7 @@ const nextConfig = {
   images: {
     domains: ['images.unsplash.com', 'source.unsplash.com'],
   },
-  assetPrefix: isProd ? '/mdellabani/portfolio/' : '',
+  assetPrefix: isProd ? '/portfolio/' : '',
   images: {
     unoptimized: true,
   },
