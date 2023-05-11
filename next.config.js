@@ -1,5 +1,5 @@
 /* eslint-env node */
-
+const isProd = process.env.NODE_ENV === 'production'
 // https://github.com/vercel/next.js/blob/master/packages/next/next-server/server/config.ts
 const nextConfig = {
   webpack: (config, options) => {
@@ -47,6 +47,10 @@ const nextConfig = {
   trailingSlash: false,
   images: {
     domains: ['images.unsplash.com', 'source.unsplash.com'],
+  },
+  assetPrefix: isProd ? '/mdellabani/portfolio/' : '',
+  images: {
+    unoptimized: true,
   },
 };
 
