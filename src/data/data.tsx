@@ -250,7 +250,7 @@ export const education: TimelineItem[] = [
     title: 'PhD in Computer Science and Mathematics',
     content: (
       <p>
-        My thesis focuses is oriented around the design, optimization and validation of distributed real-time
+        My thesis was oriented around the design, optimization and validation of distributed real-time
         application for embedded systems. Particularly, it focuses on the use of formal methods to solve problems
         related to the distributed real-time environment (communication delay, optimization issues, clock drift).
         <br />
@@ -296,16 +296,16 @@ export const experience: TimelineItem[] = [
         services.
         <ul>
           <li>
-            - Product Developement: Design, build, test and deploy of Atoti Java API capabilities: Aggregation engine,
+            - Product Development: Design, build, test and deploy of Atoti Java API capabilities: Aggregation engine,
             real-time updates, distributed computing, MDX querying
           </li>
           <li>
-            - Monitoring: Involved in enhancements and imlementations of Atoti Application Performance Monitoring stack:
+            - Monitoring: Involved in enhancements and implementations of Atoti Application Performance Monitoring stack:
             Tracing, metrics and logs. <b>Stack</b>: Zipkin, Logstash, Grafana, Prometheus, Docker
           </li>
           <li>- L2 Support : Solving performance issues and help the clients using the APIs</li>
           <li>
-            - Internship and university project supervisor : Maximise the impact of new JDK capabilities in Atoti Java
+            - Internship and university project supervisor : Maximize the impact of new JDK capabilities in Atoti Java
             API (project
             <a data-style="color:red;" href="https://openjdk.org/projects/loom/">
               {' '}
