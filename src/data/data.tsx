@@ -343,7 +343,7 @@ export const experience: TimelineItem[] = [
     date: 'September 2015 - September 2016',
     location: 'IUT Valence - Université Grenoble Alpes - Valence',
     title: 'Teaching Fellow',
-    content: <p>- Introduction to Excel (Freshmen) - Introduction to Relation Databases (Sophmore)</p>,
+    content: <p>- Introduction to Excel (Freshmen)<br/> - Introduction to Relation Databases (Sophomore)</p>,
   },
 ];
 
