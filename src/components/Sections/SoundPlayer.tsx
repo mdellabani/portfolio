@@ -17,12 +17,6 @@ const SoundPlayer = memo(() => {
       setIsPlaying(true);
     }
   };
-  useEffect(() => {
-    const play = document.getElementById('playButton');
-    if (play !== null) {
-      play.click();
-    }
-  });
 
   return (
     <div className="component">
