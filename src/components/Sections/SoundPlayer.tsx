@@ -1,4 +1,4 @@
-import {memo, useEffect,useState} from 'react';
+import {memo, useState} from 'react';
 import {IconContext} from 'react-icons'; // for customazing the icons
 import {AiFillPauseCircle, AiFillPlayCircle} from 'react-icons/ai'; // icons for play and pause
 import useSound from 'use-sound';
