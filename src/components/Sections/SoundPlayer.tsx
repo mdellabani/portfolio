@@ -7,7 +7,7 @@ import music from '../../music/jazz.mp3';
 
 const SoundPlayer = memo(() => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [play, {pause}] = useSound(music, {volume: 0.75});
+  const [play, {pause}] = useSound(music);
   const playingButton = () => {
     if (isPlaying) {
       pause(); // this will pause the audio
