@@ -38,7 +38,7 @@ import {
  */
 export const homePageMeta: HomepageMeta = {
   title: 'Mahieddine Dellabani',
-  description: "Mahieddine Dellabani Resume Website",
+  description: 'Mahieddine Dellabani Resume Website',
 };
 
 /**
@@ -250,9 +250,9 @@ export const education: TimelineItem[] = [
     title: 'PhD in Computer Science and Mathematics',
     content: (
       <p>
-        My thesis was oriented around the design, optimization and validation of distributed real-time
-        application for embedded systems. Particularly, it focuses on the use of formal methods to solve problems
-        related to the distributed real-time environment (communication delay, optimization issues, clock drift).
+        My thesis was oriented around the design, optimization and validation of distributed real-time application for
+        embedded systems. Particularly, it focuses on the use of formal methods to solve problems related to the
+        distributed real-time environment (communication delay, optimization issues, clock drift).
         <br />
         <b>Keywords</b>: Formal methods, model based development, timed automata, compiler, verification.
       </p>
@@ -300,8 +300,8 @@ export const experience: TimelineItem[] = [
             real-time updates, distributed computing, MDX querying
           </li>
           <li>
-            - Monitoring: Involved in enhancements and implementations of Atoti Application Performance Monitoring stack:
-            Tracing, metrics and logs. <b>Stack</b>: Zipkin, Logstash, Grafana, Prometheus, Docker
+            - Monitoring: Involved in enhancements and implementations of Atoti Application Performance Monitoring
+            stack: Tracing, metrics and logs. <b>Stack</b>: Zipkin, Logstash, Grafana, Prometheus, Docker
           </li>
           <li>- L2 Support : Solving performance issues and help the clients using the APIs</li>
           <li>
@@ -343,7 +343,12 @@ export const experience: TimelineItem[] = [
     date: 'September 2015 - September 2016',
     location: 'IUT Valence - Université Grenoble Alpes - Valence',
     title: 'Teaching Fellow',
-    content: <p>- Introduction to Excel (Freshmen)<br/> - Introduction to Relation Databases (Sophomore)</p>,
+    content: (
+      <p>
+        - Introduction to Excel (Freshmen)
+        <br /> - Introduction to Relation Databases (Sophomore)
+      </p>
+    ),
   },
 ];
 
