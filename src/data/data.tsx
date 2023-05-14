@@ -386,7 +386,7 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@mdellabani.me',
+      text: 'mahieddine.dellabani@gmail.com',
       href: 'mailto:mahieddine.dellabani@gmail.com',
     },
     {
