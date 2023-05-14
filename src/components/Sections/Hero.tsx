@@ -1,12 +1,12 @@
 import {ChevronDownIcon} from '@heroicons/react/outline';
 import classNames from 'classnames';
 import Image from 'next/image';
+import Link from 'next/link';
 import {FC, memo} from 'react';
 
 import {heroData, SectionId} from '../../data/data';
 import Section from '../Layout/Section';
 import Socials from '../Socials';
-import Link from 'next/link';
 
 const Hero: FC = memo(() => {
   const {imageSrc, name, description, actions} = heroData;
@@ -50,7 +50,7 @@ const Hero: FC = memo(() => {
           </div>
         </div>
         <div className="absolute inset-x-0 bottom-6 flex justify-center">
-         <Link href={`/#${SectionId.Hero}`} passHref>
+          <Link href={`/#${SectionId.Hero}`} passHref>
             <a
               className="rounded-full bg-white p-1 ring-white ring-offset-2 ring-offset-gray-700/80 focus:outline-none focus:ring-2 sm:p-2"
               href={`/#${SectionId.About}`}>
