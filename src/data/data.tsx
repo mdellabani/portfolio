@@ -123,7 +123,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'JavaScript / TypeScript',
-        level: 7,
+        level: 7.5,
       },
       {
         name: 'Bash',

@@ -1,29 +1,23 @@
-import {memo, useEffect,useState} from 'react';
+import {memo, useState} from 'react';
 import {IconContext} from 'react-icons'; // for customazing the icons
 import {AiFillPauseCircle, AiFillPlayCircle} from 'react-icons/ai'; // icons for play and pause
-import useSound from 'use-sound';
 
+import useAudio from '../../hooks/useAudio';
 import music from '../../music/jazz.mp3';
 
 const SoundPlayer = memo(() => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [play, {pause, sound}] = useSound(music);
+  const audio = useAudio(music);
   const playingButton = () => {
+    console.log('click:' + audio + ',state:' + isPlaying);
     if (isPlaying) {
-      pause(); // this will pause the audio
+      audio?.pause(); // this will pause the audio
       setIsPlaying(false);
     } else {
-      play(); // this will play the audio
+      audio?.play(); // this will play the audio
       setIsPlaying(true);
     }
   };
-
-  useEffect(() => {
-    sound?.on('play', () => setIsPlaying(true));
-    sound?.on('stop', () => setIsPlaying(false));
-    sound?.on('end', () => setIsPlaying(false));
-    sound?.on('pause', () => setIsPlaying(false));
-  }, [sound]);
 
   return (
     <div className="component">
