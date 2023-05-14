@@ -17,7 +17,7 @@ const Portfolio: FC = memo(() => {
         {/* <div className=" w-full columns-2 md:columns-3 lg:columns-4"> */}
         <div className=" w-full columns-2">
           {portfolioItems.map((item, index) => {
-            const {title, image} = item;
+            const {title, image, description} = item;
             return (
               <div className="pb-6" key={`${title}-${index}`}>
                 <div
@@ -25,6 +25,7 @@ const Portfolio: FC = memo(() => {
                     'relative h-max w-full overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl',
                   )}>
                   <Image alt={title} layout="responsive" placeholder="blur" src={image} />
+                  <div className="caption" color='white'>{description}</div>
                   <ItemOverlay item={item} />
                 </div>
               </div>
@@ -39,7 +40,7 @@ const Portfolio: FC = memo(() => {
 Portfolio.displayName = 'Portfolio';
 export default Portfolio;
 
-const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, description}}) => {
+const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title}}) => {
   const [mobile, setMobile] = useState(false);
   const [showOverlay, setShowOverlay] = useState(false);
   const linkRef = useRef<HTMLAnchorElement>(null);
@@ -76,7 +77,6 @@ const ItemOverlay: FC<{item: PortfolioItem}> = memo(({item: {url, title, descrip
       <div className="relative h-full w-full p-4">
         <div className="flex h-full w-full flex-col gap-y-2 overflow-y-auto">
           <h2 className="text-center font-bold text-white opacity-100">{title}</h2>
-          <p className="text-xs text-white opacity-100 sm:text-sm">{description}</p>
         </div>
         <ExternalLinkIcon className="absolute bottom-1 right-1 h-4 w-4 shrink-0 text-white sm:bottom-2 sm:right-2" />
       </div>

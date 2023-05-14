@@ -228,13 +228,13 @@ export const skills: SkillGroup[] = [
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Halal OS',
-    description: 'Linx based operating system.',
+    description: 'Linx based operating system',
     url: 'https://github.com/mdellabani/HalalOS',
     image: halalOs,
   },
   {
     title: 'Break Out',
-    description: 'Old School Brick Game on FPGAs.',
+    description: 'Old School Brick Game on FPGAs',
     url: 'https://github.com/mdellabani/Brick',
     image: brick,
   },
