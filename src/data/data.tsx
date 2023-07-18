@@ -15,7 +15,7 @@ import SoundCloudIcon from '../components/Icon/SoundCloudIcon';
 // import TwitterIcon from '../components/Icon/TwitterIcon';
 // import heroImage from '../images/header-background.webp';
 // import heroImage from '../images/header-background.webp';
-import heroImage from '../images/cs.jpg';
+import heroImage from '../images/gruvbox.png';
 import brick from '../images/portfolio/Brick.png';
 import halalOs from '../images/portfolio/HalalOs.png';
 import profilepic from '../images/profilepic.png';
