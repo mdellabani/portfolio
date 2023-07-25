@@ -66,7 +66,7 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Full remote <strong className="text-stone-100">Technical Lead Manager</strong>, currently working at{' '}
+        I'm a Full remote <strong className="text-stone-100">Technical Lead</strong>, currently working at{' '}
         <strong className="text-stone-100">ActiveViam</strong> helping build Atoti, a modern data analytics solution for
         financial systems.
       </p>
@@ -96,7 +96,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Technical Engineering Manager with strong technical skills. Autonomous, self-motivated
+  description: `Technical Lead with strong technical skills. Autonomous, self-motivated
   and curious, but mostly not afraid of new challenges and eager to learn new technologies.
   Open minded, sociable and used to work in a multicultural collaborative environment. As
   an engineering manager, I strive at making a great product for both users and developers :
@@ -289,7 +289,7 @@ export const experience: TimelineItem[] = [
   {
     date: 'June 2019 - September 2022',
     location: 'Activeviam - Full Remote (1 week per month in Paris)',
-    title: 'Technical Engineering Manager (6 people)',
+    title: 'Technical Lead',
     content: (
       <>
         As part of the R&D team, I design and build Atoti, a real-time decisive data analytic software for financial
