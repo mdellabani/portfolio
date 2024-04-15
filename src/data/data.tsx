@@ -66,13 +66,16 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Full remote <strong className="text-stone-100">Technical Lead</strong>, currently working at{' '}
-        <strong className="text-stone-100">ActiveViam</strong> helping build Atoti, a modern data analytics solution for
-        financial systems.
+        As a freelance R&D software engineer, I specialize in database systems,
+        concurrent and distributed systems, and formal methods with a keen focus on simulation and verification.
+        With a knack for delving into complex technical landscapes, I thrive on architecting innovative solutions
+        that push the boundaries of efficiency and reliability.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me playing football, digging vinyl and fooling with my synths, or exploring
-        the beautiful French West Coast.
+        Outside of my professional endeavors, you'll often find me immersed in various leisure pursuits.
+        Whether it's crafting intricate woodwork, tending to my flourishing vegetable garden, or orchestrating the soundscape as I manage a vibrant music label focused on vinyl releases,
+        I embrace diverse passions that fuel my creativity.
+        When not indulging in my hobbies, I'm out on the football field, or catching wave on the atlantic waves, drawing inspiration from its beauty to infuse into both my work and leisure pursuits
       </p>
     </>
   ),
@@ -96,7 +99,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Technical Lead with strong technical skills. Autonomous, self-motivated
+  description: `R&D software enginner with strong technical skills. Autonomous, self-motivated
   and curious, but mostly not afraid of new challenges and eager to learn new technologies.
   Open minded, sociable and used to work in a multicultural collaborative environment. As
   an engineering manager, I strive at making a great product for both users and developers :
@@ -106,7 +109,7 @@ export const aboutData: About = {
     {label: 'Age', text: '32', Icon: CalendarIcon},
     {label: 'Nationality', text: 'French / Algerian', Icon: FlagIcon},
     {label: 'Interests', text: 'Football, Vinyl, Piano, Surf, Snorkling', Icon: SparklesIcon},
-    {label: 'Employment', text: 'ActiveViam.', Icon: OfficeBuildingIcon},
+    {label: 'Employment', text: 'Freelance.', Icon: OfficeBuildingIcon},
   ],
 };
 
@@ -286,6 +289,55 @@ export const education: TimelineItem[] = [
 ];
 
 export const experience: TimelineItem[] = [
+      {
+    date: '',
+    location: 'SquashQL - Full Remote',
+    title: 'Open Contributor',
+    content: (
+      <>
+        <a data-style="display:inline;" href="https://www.squashql.io/">SquashQL</a> is an open-source SQL query engine designed to streamline the process of building multi-dimensional queries.
+        At its core, it acts as a middleware layer that stands between SQL databases and multiple clients or front-end applications.
+
+        In addition to my professional and leisure pursuits, I'm an enthusiastic contributor to SquashQL. Passionate about advancing the realm of database technologies,
+        I actively participate in refining and enhancing its capabilities, collaborating with fellow developers to drive innovation and foster a thriving community dedicated
+        to empowering users with robust and efficient data management solutions.
+        <ul>
+          <li>
+            {' '}
+            <b>Keywords</b>: SQL, Cloud DB{' '}
+          </li>
+        </ul>
+      </>
+    ),
+  },
+    {
+    date: 'September 2022',
+    location: 'Huawei - Full Remote (1 week per month in Grenoble)',
+    title: 'R&D Software Engineer Freelance',
+    content: (
+      <>
+        Grenoble Fermat Lab. is responsible for advanced technical research and development of Model-based and
+        Formal methods for different business domains including Automotive and ICT. The team is responsible for
+        building formal modeling, simulation, verification and code generation tools for the design and development
+        of trustworthy and efficient embedded software.<br />
+
+        My responsibilities are centered around our Model-Based Design (MBD) platform's simulation engine, involving benchmarking both the Java interpreter
+        and the C++ simulation engine for optimal performance.
+        The ultimate goal is to implement, test and deliver well-architected enhancements for optimal performance and great user experience.
+        Additionally, I provide support to the team in building robust and high-quality software. I actively explore formal
+        modeling technologies to design and develop trustworthy software solutions, contributing to our team's ongoing success in achieving the company's objectives.
+        
+        As part of the R&D team, I design and build Atoti, a real-time decisive data analytic software for financial
+        services.
+        <ul>
+          <li>
+            {' '}
+            <b>Keywords</b>: Formal Methods, Verification, Concurent System, Simulation{' '}
+          </li>
+        </ul>
+      </>
+    ),
+  },
   {
     date: 'June 2019 - September 2022',
     location: 'Activeviam - Full Remote (1 week per month in Paris)',
@@ -391,8 +443,8 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.Location,
-      text: 'Bahus-Soubiran, France',
-      href: 'https://www.google.com/maps/place/40320+Bahus-Soubiran/@43.6744061,-0.386931,13z/data=!3m1!4b1!4m6!3m5!1s0xd56724b36f36cf1:0x2db7b3c19a509813!8m2!3d43.673555!4d-0.356005!16s%2Fm%2F03nvvzp',
+      text: 'Saint-Médard, France',
+      href: 'https://www.google.com/maps/place/64370+Saint-M%C3%A9dard,+France/@43.5269223,-0.6036646,11.96z/data=!4m6!3m5!1s0xd5661dcaf7e81fb:0x4066517481391d0!8m2!3d43.530203!4d-0.590924!16s%2Fm%2F03wc3p1?entry=ttu',
     },
     // {
     //   type: ContactType.Instagram,
