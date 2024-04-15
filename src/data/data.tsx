@@ -295,8 +295,8 @@ export const experience: TimelineItem[] = [
     title: 'Open Contributor',
     content: (
       <>
-        <a data-style="display:inline;" href="https://www.squashql.io/">SquashQL</a> is an open-source SQL query engine designed to streamline the process of building multi-dimensional queries.
-        At its core, it acts as a middleware layer that stands between SQL databases and multiple clients or front-end applications.
+        SquashQL is an open-source SQL query engine designed to streamline the process of building multi-dimensional queries.
+        At its core, it acts as a middleware layer that stands between SQL databases and multiple clients or front-end applications.<br/>
 
         In addition to my professional and leisure pursuits, I'm an enthusiastic contributor to SquashQL. Passionate about advancing the realm of database technologies,
         I actively participate in refining and enhancing its capabilities, collaborating with fellow developers to drive innovation and foster a thriving community dedicated
@@ -304,7 +304,7 @@ export const experience: TimelineItem[] = [
         <ul>
           <li>
             {' '}
-            <b>Keywords</b>: SQL, Cloud DB{' '}
+            <b>Keywords</b>: <a href="https://www.squashql.io/">SquashQL</a>, SQL, Cloud DB{' '}
           </li>
         </ul>
       </>

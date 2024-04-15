@@ -40,7 +40,7 @@ const DesktopNav: FC<{navSections: SectionId[]; currentSection: SectionId | null
     return (
       <header className="fixed top-0 z-50 hidden w-full bg-neutral-900/50 p-4 backdrop-blur sm:block" id={headerID}>
         <nav className="flex justify-center gap-x-8">
-          <SoundPlayer />
+          {/* <SoundPlayer /> */}
           {navSections.map(section => (
             <NavItem
               activeClass={activeClass}
