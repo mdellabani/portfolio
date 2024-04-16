@@ -289,29 +289,8 @@ export const education: TimelineItem[] = [
 ];
 
 export const experience: TimelineItem[] = [
-      {
-    date: '',
-    location: 'SquashQL - Full Remote',
-    title: 'Open Contributor',
-    content: (
-      <>
-        SquashQL is an open-source SQL query engine designed to streamline the process of building multi-dimensional queries.
-        At its core, it acts as a middleware layer that stands between SQL databases and multiple clients or front-end applications.<br/>
-
-        In addition to my professional and leisure pursuits, I'm an enthusiastic contributor to SquashQL. Passionate about advancing the realm of database technologies,
-        I actively participate in refining and enhancing its capabilities, collaborating with fellow developers to drive innovation and foster a thriving community dedicated
-        to empowering users with robust and efficient data management solutions.
-        <ul>
-          <li>
-            {' '}
-            <b>Keywords</b>: <a href="https://www.squashql.io/">SquashQL</a>, SQL, Cloud DB{' '}
-          </li>
-        </ul>
-      </>
-    ),
-  },
     {
-    date: 'September 2022',
+    date: 'September 2023 - Now',
     location: 'Huawei - Full Remote (1 week per month in Grenoble)',
     title: 'R&D Software Engineer Freelance',
     content: (
@@ -338,8 +317,29 @@ export const experience: TimelineItem[] = [
       </>
     ),
   },
+      {
+    date: '',
+    location: 'SquashQL - Full Remote',
+    title: 'Open Contributor',
+    content: (
+      <>
+        SquashQL is an open-source SQL query engine designed to streamline the process of building multi-dimensional queries.
+        At its core, it acts as a middleware layer that stands between SQL databases and multiple clients or front-end applications.<br/>
+
+        In addition to my professional and leisure pursuits, I'm an enthusiastic contributor to SquashQL. Passionate about advancing the realm of database technologies,
+        I actively participate in refining and enhancing its capabilities, collaborating with fellow developers to drive innovation and foster a thriving community dedicated
+        to empowering users with robust and efficient data management solutions.
+        <ul>
+          <li>
+            {' '}
+            <b>Keywords</b>: <a href="https://www.squashql.io/">SquashQL</a>, SQL, Cloud DB{' '}
+          </li>
+        </ul>
+      </>
+    ),
+  },
   {
-    date: 'June 2019 - September 2022',
+    date: 'June 2019 - September 2023',
     location: 'Activeviam - Full Remote (1 week per month in Paris)',
     title: 'Technical Lead',
     content: (
