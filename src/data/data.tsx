@@ -305,9 +305,7 @@ export const experience: TimelineItem[] = [
         The ultimate goal is to implement, test and deliver well-architected enhancements for optimal performance and great user experience.
         Additionally, I provide support to the team in building robust and high-quality software. I actively explore formal
         modeling technologies to design and develop trustworthy software solutions, contributing to our team's ongoing success in achieving the company's objectives.
-        
-        As part of the R&D team, I design and build Atoti, a real-time decisive data analytic software for financial
-        services.
+
         <ul>
           <li>
             {' '}
