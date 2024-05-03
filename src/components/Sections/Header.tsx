@@ -6,7 +6,6 @@ import {FC, Fragment, memo, useCallback, useMemo, useState} from 'react';
 
 import {SectionId} from '../../data/data';
 import {useNavObserver} from '../../hooks/useNavObserver';
-import SoundPlayer from './SoundPlayer';
 
 export const headerID = 'headerNav';
 
@@ -99,7 +98,6 @@ const MobileNav: FC<{navSections: SectionId[]; currentSection: SectionId | null}
               leaveTo="-translate-x-full">
               <div className="relative w-4/5 bg-stone-800">
                 <nav className="mt-5 flex flex-col gap-y-2 px-2">
-                  <SoundPlayer />
                   {navSections.map(section => (
                     <NavItem
                       activeClass={activeClass}
