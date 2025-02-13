@@ -1,8 +1,8 @@
-import {FC, memo} from 'react';
+import {memo} from 'react';
 
-import Icon, {IconProps} from './Icon';
+import Icon from './Icon';
 
-const StackOverflowIcon: FC<IconProps> = memo(props => (
+const StackOverflowIcon = memo(props => (
   <Icon {...props}>
     <path d="M90.1875 114.162V83.027H104.062V128H0V83.027H13.875V114.162H90.1875Z" fill="currentColor" />
     <path

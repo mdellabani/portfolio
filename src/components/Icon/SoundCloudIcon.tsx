@@ -1,8 +1,8 @@
-import {FC, memo} from 'react';
+import {memo} from 'react';
 
-import Icon, {IconProps} from './Icon';
+import Icon from './Icon';
 
-const SoundCloudIcon: FC<IconProps> = memo(props => (
+const SoundCloudIcon = memo(props => (
   <Icon viewBox="0 0 300 300" {...props}>
     <path
       d="M72.83,218.485h18.207V103.832c-6.828,1.93-12.982,5.435-18.207,10.041

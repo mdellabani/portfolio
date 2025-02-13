@@ -1,6 +1,6 @@
-import {FC, memo} from 'react';
+import {memo} from 'react';
 
-const Base: FC = memo(() => {
+const Base = memo(() => {
   return <></>;
 });
 

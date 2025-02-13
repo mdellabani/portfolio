@@ -1,6 +1,6 @@
 import {DeviceMobileIcon, LocationMarkerIcon, MailIcon} from '@heroicons/react/outline';
 import classNames from 'classnames';
-import {FC, memo} from 'react';
+import {memo} from 'react';
 
 import {contact, SectionId} from '../../../data/data';
 import {ContactType, ContactValue} from '../../../data/dataDef';
@@ -23,7 +23,7 @@ const ContactValueMap: Record<ContactType, ContactValue> = {
   [ContactType.Instagram]: {Icon: InstagramIcon, srLabel: 'Instagram'},
 };
 
-const Contact: FC = memo(() => {
+const Contact = memo(() => {
   const {headerText, description, items} = contact;
   return (
     <Section className="bg-neutral-800" sectionId={SectionId.Contact}>

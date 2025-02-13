@@ -66,16 +66,17 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        As a freelance R&D software engineer, I specialize in database systems,
-        concurrent and distributed systems, and formal methods with a keen focus on simulation and verification.
-        With a knack for delving into complex technical landscapes, I thrive on architecting innovative solutions
-        that push the boundaries of efficiency and reliability.
+        As a freelance R&D software engineer, I specialize in database systems, concurrent and distributed systems, and
+        formal methods with a keen focus on simulation and verification. With a knack for delving into complex technical
+        landscapes, I thrive on architecting innovative solutions that push the boundaries of efficiency and
+        reliability.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Outside of my professional endeavors, you'll often find me immersed in various leisure pursuits.
-        Whether it's crafting intricate woodwork, tending to my flourishing vegetable garden, or orchestrating the soundscape as I manage a vibrant music label focused on vinyl releases,
-        I embrace diverse passions that fuel my creativity.
-        When not indulging in my hobbies, I'm out on the football field, or catching wave on the atlantic waves, drawing inspiration from its beauty to infuse into both my work and leisure pursuits
+        Outside of my professional endeavors, you'll often find me immersed in various leisure pursuits. Whether it's
+        crafting intricate woodwork, tending to my flourishing vegetable garden, or orchestrating the soundscape as I
+        manage a vibrant music label focused on vinyl releases, I embrace diverse passions that fuel my creativity. When
+        not indulging in my hobbies, I'm out on the football field, or catching wave on the atlantic waves, drawing
+        inspiration from its beauty to infuse into both my work and leisure pursuits
       </p>
     </>
   ),
@@ -289,23 +290,23 @@ export const education: TimelineItem[] = [
 ];
 
 export const experience: TimelineItem[] = [
-    {
+  {
     date: 'September 2023 - Now',
     location: 'Huawei - Full Remote (1 week per month in Grenoble)',
     title: 'R&D Software Engineer Freelance',
     content: (
       <>
-        Grenoble Fermat Lab. is responsible for advanced technical research and development of Model-based and
-        Formal methods for different business domains including Automotive and ICT. The team is responsible for
-        building formal modeling, simulation, verification and code generation tools for the design and development
-        of trustworthy and efficient embedded software.<br />
-
-        My responsibilities are centered around our Model-Based Design (MBD) platform's simulation engine, involving benchmarking both the Java interpreter
-        and the C++ simulation engine for optimal performance.
-        The ultimate goal is to implement, test and deliver well-architected enhancements for optimal performance and great user experience.
-        Additionally, I provide support to the team in building robust and high-quality software. I actively explore formal
-        modeling technologies to design and develop trustworthy software solutions, contributing to our team's ongoing success in achieving the company's objectives.
-
+        Grenoble Fermat Lab. is responsible for advanced technical research and development of Model-based and Formal
+        methods for different business domains including Automotive and ICT. The team is responsible for building formal
+        modeling, simulation, verification and code generation tools for the design and development of trustworthy and
+        efficient embedded software.
+        <br />
+        My responsibilities are centered around our Model-Based Design (MBD) platform's simulation engine, involving
+        benchmarking both the Java interpreter and the C++ simulation engine for optimal performance. The ultimate goal
+        is to implement, test and deliver well-architected enhancements for optimal performance and great user
+        experience. Additionally, I provide support to the team in building robust and high-quality software. I actively
+        explore formal modeling technologies to design and develop trustworthy software solutions, contributing to our
+        team's ongoing success in achieving the company's objectives.
         <ul>
           <li>
             {' '}
@@ -315,17 +316,19 @@ export const experience: TimelineItem[] = [
       </>
     ),
   },
-      {
+  {
     date: '',
     location: 'SquashQL - Full Remote',
     title: 'Open Contributor',
     content: (
       <>
-        SquashQL is an open-source SQL query engine designed to streamline the process of building multi-dimensional queries.
-        At its core, it acts as a middleware layer that stands between SQL databases and multiple clients or front-end applications.<br/>
-
-        In addition to my professional and leisure pursuits, I'm an enthusiastic contributor to SquashQL. Passionate about advancing the realm of database technologies,
-        I actively participate in refining and enhancing its capabilities, collaborating with fellow developers to drive innovation and foster a thriving community dedicated
+        SquashQL is an open-source SQL query engine designed to streamline the process of building multi-dimensional
+        queries. At its core, it acts as a middleware layer that stands between SQL databases and multiple clients or
+        front-end applications.
+        <br />
+        In addition to my professional and leisure pursuits, I'm an enthusiastic contributor to SquashQL. Passionate
+        about advancing the realm of database technologies, I actively participate in refining and enhancing its
+        capabilities, collaborating with fellow developers to drive innovation and foster a thriving community dedicated
         to empowering users with robust and efficient data management solutions.
         <ul>
           <li>

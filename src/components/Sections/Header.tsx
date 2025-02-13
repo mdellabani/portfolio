@@ -2,14 +2,14 @@ import {Dialog, Transition} from '@headlessui/react';
 import {MenuAlt3Icon} from '@heroicons/react/outline';
 import classNames from 'classnames';
 import Link from 'next/link';
-import {FC, Fragment, memo, useCallback, useMemo, useState} from 'react';
+import {Fragment, memo, useCallback, useMemo, useState} from 'react';
 
 import {SectionId} from '../../data/data';
 import {useNavObserver} from '../../hooks/useNavObserver';
 
 export const headerID = 'headerNav';
 
-const Header: FC = memo(() => {
+const Header = memo(() => {
   const [currentSection, setCurrentSection] = useState<SectionId | null>(null);
   const navSections = useMemo(
     () => [SectionId.About, SectionId.Resume, SectionId.Portfolio, SectionId.Testimonials, SectionId.Contact],
@@ -30,8 +30,8 @@ const Header: FC = memo(() => {
   );
 });
 
-const DesktopNav: FC<{navSections: SectionId[]; currentSection: SectionId | null}> = memo(
-  ({navSections, currentSection}) => {
+const DesktopNav = memo(
+  ({navSections, currentSection}: {navSections: SectionId[]; currentSection: SectionId | null}) => {
     const baseClass =
       '-m-1.5 p-1.5 rounded-md font-bold first-letter:uppercase hover:transition-colors hover:duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500 sm:hover:text-orange-500 text-neutral-100';
     const activeClass = classNames(baseClass, 'text-orange-500');
@@ -55,8 +55,8 @@ const DesktopNav: FC<{navSections: SectionId[]; currentSection: SectionId | null
   },
 );
 
-const MobileNav: FC<{navSections: SectionId[]; currentSection: SectionId | null}> = memo(
-  ({navSections, currentSection}) => {
+const MobileNav = memo(
+  ({navSections, currentSection}: {navSections: SectionId[]; currentSection: SectionId | null}) => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
     const toggleOpen = useCallback(() => {
@@ -118,21 +118,29 @@ const MobileNav: FC<{navSections: SectionId[]; currentSection: SectionId | null}
   },
 );
 
-const NavItem: FC<{
-  section: string;
-  current: boolean;
-  activeClass: string;
-  inactiveClass: string;
-  onClick?: () => void;
-}> = memo(({section, current, inactiveClass, activeClass, onClick}) => {
-  return (
-    <Link href={`/#${section}`} passHref>
-      <a className={classNames(current ? activeClass : inactiveClass)} key={section} onClick={onClick}>
-        {section}
-      </a>
-    </Link>
-  );
-});
+const NavItem = memo(
+  ({
+    section,
+    current,
+    inactiveClass,
+    activeClass,
+    onClick,
+  }: {
+    section: string;
+    current: boolean;
+    activeClass: string;
+    inactiveClass: string;
+    onClick?: () => void;
+  }) => {
+    return (
+      <Link href={`/#${section}`} passHref>
+        <a className={classNames(current ? activeClass : inactiveClass)} key={section} onClick={onClick}>
+          {section}
+        </a>
+      </Link>
+    );
+  },
+);
 
 Header.displayName = 'Header';
 export default Header;

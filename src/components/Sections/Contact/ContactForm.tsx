@@ -1,5 +1,5 @@
 import emailjs from 'emailjs-com';
-import {FC, memo, useCallback, useMemo, useRef,useState} from 'react';
+import {memo, useCallback, useMemo, useRef, useState} from 'react';
 
 interface FormData {
   name: string;
@@ -7,7 +7,7 @@ interface FormData {
   message: string;
 }
 
-const ContactForm: FC = memo(() => {
+const ContactForm = memo(() => {
   const defaultData = useMemo(
     () => ({
       name: '',
@@ -38,15 +38,22 @@ const ContactForm: FC = memo(() => {
        * This is a good starting point to wire up your form submission logic
        * */
       console.log('Data to send: ', data);
-      emailjs.sendForm(process.env.NEXT_PUBLIC_SERVICE_ID!, process.env.NEXT_PUBLIC_TEMPLATE_ID!, form.current!, process.env.NEXT_PUBLIC_PUBLIC_KEY!).then(
-        _result => {
-          alert('Message Sent, I will get back to you shortly :)!');
-        },
-        error => {
-          alert('An error occurred, Please try again!');
-          console.log(error);
-        },
-      );
+      emailjs
+        .sendForm(
+          process.env.NEXT_PUBLIC_SERVICE_ID!,
+          process.env.NEXT_PUBLIC_TEMPLATE_ID!,
+          form.current!,
+          process.env.NEXT_PUBLIC_PUBLIC_KEY!,
+        )
+        .then(
+          _result => {
+            alert('Message Sent, I will get back to you shortly :)!');
+          },
+          error => {
+            alert('An error occurred, Please try again!');
+            console.log(error);
+          },
+        );
     },
     [data],
   );

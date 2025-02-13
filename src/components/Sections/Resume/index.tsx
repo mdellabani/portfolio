@@ -1,4 +1,4 @@
-import {FC, memo} from 'react';
+import {memo} from 'react';
 
 import {education, experience, SectionId, skills} from '../../../data/data';
 import Section from '../../Layout/Section';
@@ -6,7 +6,7 @@ import ResumeSection from './ResumeSection';
 import {SkillGroup} from './Skills';
 import TimelineItem from './TimelineItem';
 
-const Resume: FC = memo(() => {
+const Resume = memo(() => {
   return (
     <Section className="bg-neutral-100" sectionId={SectionId.Resume}>
       <div className="flex flex-col divide-y-2 divide-neutral-300">

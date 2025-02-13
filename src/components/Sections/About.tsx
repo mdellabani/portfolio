@@ -1,11 +1,11 @@
 import classNames from 'classnames';
 import Image from 'next/image';
-import {FC, memo} from 'react';
+import {memo} from 'react';
 
 import {aboutData, SectionId} from '../../data/data';
 import Section from '../Layout/Section';
 
-const About: FC = memo(() => {
+const About = memo(() => {
   const {profileImageSrc, description, aboutItems} = aboutData;
   return (
     <Section className="bg-neutral-800" sectionId={SectionId.About}>

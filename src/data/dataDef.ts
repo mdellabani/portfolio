@@ -1,5 +1,5 @@
 import {StaticImageData} from 'next/image';
-import {FC, SVGProps} from 'react';
+import {SVGProps} from 'react';
 
 import {IconProps} from '../components/Icon/Icon';
 
@@ -136,7 +136,7 @@ export interface ContactItem {
 }
 
 export interface ContactValue {
-  Icon: FC<IconProps> | ((props: SVGProps<SVGSVGElement>) => JSX.Element);
+  Icon: React.ComponentType<IconProps> | ((props: SVGProps<SVGSVGElement>) => JSX.Element);
   srLabel: string;
 }
 
@@ -145,6 +145,6 @@ export interface ContactValue {
  */
 export interface Social {
   label: string;
-  Icon: FC<IconProps>;
+  Icon: React.ComponentType<IconProps>;
   href: string;
 }
