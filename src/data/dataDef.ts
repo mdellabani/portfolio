@@ -1,9 +1,9 @@
 import {StaticImageData} from 'next/image';
-import {SVGProps} from 'react';
+import {PropsWithChildren, SVGProps} from 'react';
 
 import {IconProps} from '../components/Icon/Icon';
 
-export interface HomepageMeta {
+export interface HomepageMeta extends PropsWithChildren {
   title: string;
   description: string;
   ogImageUrl?: string;
