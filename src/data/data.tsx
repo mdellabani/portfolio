@@ -287,7 +287,7 @@ export const education: TimelineItem[] = [
     ),
   },
   {
-    date: 'September 2011 - September 2014',
+    date: '09/2011 - 09/2014',
     location: 'Grenoble INP PHELMA/ENSIMAG - France',
     title: 'Engineering Diploma - Embedded Software and Systems',
     content: (
@@ -318,7 +318,7 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: 'September 2023 - Now',
+    date: '09/2023 - 02/2025',
     location: 'Huawei - Full Remote (1 week per month in Grenoble)',
     title: 'R&D Software Engineer Freelance',
     content: (
@@ -413,7 +413,7 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'September 2023 - Martch 2024',
+    date: '09/2023 - 03/2024',
     location: 'SquashQL - Full Remote',
     title: 'Open Contributor',
     content: (
@@ -483,7 +483,7 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'June 2019 - September 2023',
+    date: '06/2019 - 09/2023',
     location: 'Activeviam - Full Remote (1 week per month in Paris)',
     title: 'Technical Lead',
     content: (
@@ -534,6 +534,7 @@ export const experience: TimelineItem[] = [
         <div>
           <span className="tag">In-Memory</span>
           <span className="tag">Distributed System</span>
+          <span className="tag">Aggregation</span>
           <span className="tag">Concurrency</span>
           <span className="tag">Monitoring</span>
           <span className="tag">Java 17</span>
@@ -543,6 +544,8 @@ export const experience: TimelineItem[] = [
           <span className="tag">Grafana</span>
           <span className="tag">Prometheus</span>
           <span className="tag">Docker</span>
+          <span className="tag">Atoti</span>
+          <span className="tag">ActivePivot</span>
 
           <span className="tag">CircleCI</span>
           <span className="tag">Artifactory</span>
@@ -558,7 +561,7 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'September 2018 - June 2019',
+    date: '09/2018 - 06/2019',
     location: 'INGIMA - Paris',
     title: 'R&D Software Engineering',
     content: (
@@ -566,7 +569,6 @@ export const experience: TimelineItem[] = [
         INGILAB is the Innovation Lab and POC Factory of INGIMA, focused on exploring new possibilities with its motto
         "explore by doing." As part of INGILAB, I worked on various research studies and proof of concepts in multiple
         fields such as image processing, machine learning, and embedded systems.
-        <br />I contributed primarily to two key projects:
         <div className="bullet">
           <span className="bullet-icon">📄</span>{' '}
           <span className="bullet-text">
@@ -596,7 +598,7 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'October 2014 - September 2018',
+    date: '10/2014 - 09/2018',
     location: ' Verimag - Grenoble',
     title: 'Full Time Researcher - PhD in Computer Science and Mathematics',
     content: (
@@ -635,7 +637,7 @@ export const experience: TimelineItem[] = [
     ),
   },
   {
-    date: 'September 2015 - September 2016',
+    date: '09/2015 - 09/2016',
     location: 'IUT Valence - Université Grenoble Alpes - Valence',
     title: 'Teaching Fellow',
     content: (

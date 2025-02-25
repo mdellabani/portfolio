@@ -54,6 +54,44 @@ body {
   background-color: transparent; 
 }
 
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  background-color: #cccccc;
+  border-radius: 50%;
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  transform: translateY(-50%);
+}
+
+.timeline-line {
+  width: 2px;
+  background-color: #e0e0e0;
+  position: absolute;
+  top: 20px;
+  bottom: -20px; 
+  left: 15px; 
+}
+
+.timeline-date {
+  position: absolute;
+  left: -60px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: right;
+  width: 50px; 
+}
+
+.active .timeline-dot {
+  background-color: #fb923c; /* Active dot color */
+}
+
+.active .timeline-line {
+  background-color: #fb923c; /* Active line color */
+}
+
+
 .bullet {
   display: flex;
   align-items: flex-start;
