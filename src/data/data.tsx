@@ -82,10 +82,10 @@ export const heroData: Hero = {
         Beyond technical expertise, I have experience leading teams, mentoring engineers, and contributing to product
         roadmaps, ensuring alignment between technical execution and business goals.
       </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+      {/* <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         Currently, I lead development as CTO of a sports-focused web and mobile application, leveraging my expertise
         across multiple technologies to drive technical excellence.
-      </p>
+      </p> */}
     </>
   ),
   actions: [
@@ -114,7 +114,7 @@ export const aboutData: About = {
   an engineering manager, I strive at making a great product for both users and developers :
   Foster innovation, promote best practice and ensure engineers’ happiness.`,
   aboutItems: [
-    {label: 'Location', text: 'Bahus-Soubiran, France', Icon: MapIcon},
+    {label: 'Location', text: 'Saint-Medard, 64370, France', Icon: MapIcon},
     {label: 'Age', text: calculateAge('1990-11-27'), Icon: CalendarIcon},
     {label: 'Nationality', text: 'French / Algerian', Icon: FlagIcon},
     {label: 'Interests', text: 'Football, Vinyl, Piano, Surf, Snorkling', Icon: SparklesIcon},
