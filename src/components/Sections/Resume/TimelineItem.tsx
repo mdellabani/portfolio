@@ -9,7 +9,6 @@ interface TimelineItem {
 
 const Timeline = memo(({item, isLast = false}: {item: TimelineItem; isLast?: boolean}) => {
   const {title, date, location, content} = item;
-  const style = isLast ? 'timeine-line' : 'active timeline';
   return (
     <div className={`relative flex flex-col pb-8 text-center last:pb-0 md:text-left ${isLast ? 'active' : ''}`}>
       <div className="relative flex items-start pl-24">
