@@ -23,6 +23,7 @@ export interface HomepageMeta extends PropsWithChildren {
 export interface Hero {
   imageSrc: string;
   name: string;
+  role: string;
   description: JSX.Element;
   actions: HeroActionItem[];
 }

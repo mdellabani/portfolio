@@ -19,6 +19,7 @@
     height: -webkit-fill-available;
   }
 }
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
 
 /* Global styles */
 * {
@@ -36,8 +37,35 @@ body {
   position: relative;
   width: 100%;
   color: #444444;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif;
+  font-family: 'Chakra Petch', sans-serif;
   background-color: #fafafa;
+}
+
+.tag {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px;
+  border: 2px solid #007bff;
+  color: #007bff; 
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: transparent; 
+}
+
+.bullet {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.bullet-icon {
+  flex-shrink: 0;
+}
+
+.bullet-text {
+  word-wrap: break-word;
 }
 
 td,
@@ -73,14 +101,25 @@ a:hover {
   }
 
   .anim-typewriter{
-    animation: typewriter 3s steps(22) 1s 1 normal both,
+    animation: typewriter-name 3s steps(22) 1s 1 normal both,
               blinkTextCursor 500ms steps(22) infinite normal;
   }
 
-  @keyframes typewriter{
-      from{width: 0;}
-      to{width: 600px;}
+  .delay-typewriter {
+    animation: typewriter-role 3s steps(22) 1s 1 normal both,
+    blinkTextCursor 500ms steps(22) infinite normal;
+    animation-delay: 3.5s; 
   }
+
+  @keyframes typewriter-name {
+      from{width: 0;}
+      to{width: 500px;}
+  }
+
+  @keyframes typewriter-role {
+    from{width: 0;}
+    to{width: 700px;}
+}
 
   @keyframes blinkTextCursor{
       from{border-right-color: rgba(255,255,255,.75);}
