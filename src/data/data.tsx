@@ -151,7 +151,11 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'JavaScript / TypeScript',
-        level: 7.5,
+        level: 8,
+      },
+      {
+        name: 'SQL / MDX',
+        level: 7,
       },
       {
         name: 'Bash',
@@ -160,11 +164,7 @@ export const skills: SkillGroup[] = [
 
       {
         name: 'C / C++',
-        level: 4,
-      },
-      {
-        name: 'SQL / MDX',
-        level: 6,
+        level: 5,
       },
     ],
   },
@@ -177,7 +177,11 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Spring Boot',
-        level: 7,
+        level: 8,
+      },
+      {
+        name: 'Expo',
+        level: 6,
       },
       {
         name: 'React/Next.js',
@@ -185,27 +189,27 @@ export const skills: SkillGroup[] = [
       },
     ],
   },
-  {
-    name: 'Tools',
-    skills: [
-      {
-        name: 'JDK and Java Building Tools',
-        level: 8,
-      },
-      {
-        name: 'Git',
-        level: 9,
-      },
-      {
-        name: 'CI/CD',
-        level: 8,
-      },
-      {
-        name: 'Docker',
-        level: 8,
-      },
-    ],
-  },
+  // {
+  //   name: 'Tools',
+  //   skills: [
+  //     {
+  //       name: 'JDK and Java Building Tools',
+  //       level: 8,
+  //     },
+  //     {
+  //       name: 'Git',
+  //       level: 9,
+  //     },
+  //     {
+  //       name: 'CI/CD',
+  //       level: 8,
+  //     },
+  //     {
+  //       name: 'Docker',
+  //       level: 8,
+  //     },
+  //   ],
+  // },
   {
     name: 'Cloud Services',
     skills: [
