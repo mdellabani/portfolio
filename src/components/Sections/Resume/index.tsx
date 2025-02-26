@@ -3,6 +3,7 @@ import {memo} from 'react';
 import {education, experience, SectionId, skills} from '../../../data/data';
 import Section from '../../Layout/Section';
 import TechStack from '../TechStack';
+import Publications from './Publications';
 import ResumeSection from './ResumeSection';
 import {SkillGroup} from './Skills';
 import Timeline from './TimelineItem';
@@ -29,6 +30,10 @@ const Resume = memo(() => {
             ))}
           </div>
         </ResumeSection>
+        <ResumeSection title="Publications">
+          <Publications />
+        </ResumeSection>
+
       </div>
     </Section>
   );
