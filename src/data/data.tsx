@@ -706,8 +706,8 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'mahieddine.dellabani@gmail.com',
-      href: 'mailto:mahieddine.dellabani@gmail.com',
+      text: 'mdellabani@gmail.com',
+      href: 'mailto:mdellabani@gmail.com',
     },
     {
       type: ContactType.Location,
