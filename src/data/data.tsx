@@ -281,13 +281,13 @@ export const education: TimelineItem[] = [
     location: 'Iowa State University - USA',
     title: 'Exchange Student in Computer Engineering',
     content: (
-      <p>
+      <>
         <div>
           <span className="tag">Advanced Computer Architecture</span>
           <span className="tag">Reconfigurable Systems</span>
           <span className="tag">Distributed Software Development</span>
         </div>
-      </p>
+      </>
     ),
   },
   {
@@ -295,7 +295,7 @@ export const education: TimelineItem[] = [
     location: 'Grenoble INP PHELMA/ENSIMAG - France',
     title: 'Engineering Diploma - Embedded Software and Systems',
     content: (
-      <p>
+      <>
         <div className="bullet">
           <span className="bullet-icon">🚀</span>{' '}
           <span className="bullet-text">
@@ -315,7 +315,7 @@ export const education: TimelineItem[] = [
           <span className="tag">SAP Hana</span>
         </div>
         <br />
-      </p>
+      </>
     ),
   },
 ];

@@ -135,5 +135,5 @@ const Testimonial = memo(
     </div>
   ),
 );
-
+Testimonials.displayName = 'Testimonials';
 export default Testimonials;
