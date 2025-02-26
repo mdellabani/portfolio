@@ -101,7 +101,7 @@ const SkillIcon = memo(({icon, label}: Skill) => (
 
 const TechStack = memo(() => {
   return (
-    <div style={{textAlign: 'center', marginBottom: '20px'}}>
+    <div id="tech-stack" style={{textAlign: 'center', marginBottom: '20px', marginTop: '-20px'}}>
       <h1 style={{marginBottom: '20px', fontSize: '2rem'}}>
         <strong>TECH STACK</strong>
       </h1>
