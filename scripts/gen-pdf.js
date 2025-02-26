@@ -14,13 +14,12 @@ import {launch} from 'puppeteer';
   
   await page.addStyleTag({
     content: `
-      /* Prevent page breaks inside the timeline section with the specific ID */
       #tech-stack {
         page-break-inside: avoid !important;
         page-break-before: avoid !important;
         page-break-after: always !important;
       }
-         #skills {
+      #skills {
         page-break-inside: avoid !important;
       }
     `,
@@ -40,9 +39,8 @@ import {launch} from 'puppeteer';
 
     const testimonials = document.querySelector('#testimonials');
     if (testimonials) testimonials.remove();
-    const body = document.body;
 
-    body.style.backgroundColor = '#f5f5f5'; // White background, or choose another color
+    document.body.style.backgroundColor = '#f5f5f5';
   });
 
   const pdfPath = 'portfolio.pdf';
