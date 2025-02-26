@@ -5,7 +5,7 @@ import {Skill as SkillType, SkillGroup as SkillGroupType} from '../../../data/da
 export const SkillGroup = memo(({skillGroup}: {skillGroup: SkillGroupType}) => {
   const {name, skills} = skillGroup;
   return (
-    <div className="flex flex-col"id="skills">
+    <div className="flex flex-col" id="skills">
       <span className="text-center text-lg font-bold">{name}</span>
       <div className="flex flex-col gap-y-2">
         {skills.map((skill, index) => (
