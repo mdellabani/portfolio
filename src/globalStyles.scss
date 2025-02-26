@@ -78,7 +78,7 @@ body {
 
 .timeline-date {
   position: absolute;
-  left: -60px;
+  left: -60px; /* Adjust for desktop */
   top: 50%;
   transform: translateY(-50%);
   text-align: right;
@@ -87,13 +87,31 @@ body {
 
 .active .timeline-dot {
   border-color: #fafafa;
-  background-color: #fb923c; /* Active dot color */
+  background-color: #fb923c;
 }
 
 .active .timeline-line {
-  background-color: #fb923c; /* Active line color */
+  background-color: #fb923c;
 }
 
+@media (max-width: 768px) {
+  .timeline-date {
+    position: static; /* Reset position for mobile */
+    left: auto; /* Reset left */
+    top: auto; /* Reset top */
+    transform: none; /* Remove transform */
+    text-align: center; /* Center align for mobile */
+    width: auto; /* Allow it to take full width */
+  }
+
+  .timeline-dot {
+    left: 5px; /* Adjust dot position for mobile */
+  }
+
+  .timeline-line {
+    display: none; /* Hide line on mobile */
+  }
+}
 
 .bullet {
   display: flex;

@@ -33,7 +33,6 @@ const Resume = memo(() => {
         <ResumeSection title="Publications">
           <Publications />
         </ResumeSection>
-
       </div>
     </Section>
   );

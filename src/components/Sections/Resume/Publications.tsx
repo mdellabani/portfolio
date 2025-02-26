@@ -17,7 +17,8 @@ const papers: Paper[] = [
     link: 'https://drops.dagstuhl.de/storage/07lites/lites_vol006/lites_vol006_issue001/LITES-v006-i001-a001/LITES-v006-i001-a001.pdf',
   },
   {
-    title: 'Formal methods for distributed real-time systems. (Méthodes formelles pour les systèmes distribués temps-réel)',
+    title:
+      'Formal methods for distributed real-time systems. (Méthodes formelles pour les systèmes distribués temps-réel)',
     authors: 'Mahieddine Dellabani',
     publication: 'Grenoble Alpes University, France, 2018',
     year: 2018,
@@ -57,7 +58,7 @@ const Publications = memo(() => {
 
   return (
     <section>
-      {Object.keys(groupedPapers).map((year) => {
+      {Object.keys(groupedPapers).map(year => {
         const yearPapers = groupedPapers[parseInt(year)];
         return (
           <div key={year}>
