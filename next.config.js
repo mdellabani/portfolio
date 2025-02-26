@@ -3,7 +3,7 @@ const isProd = process.env.NODE_ENV === 'production'
 // https://github.com/vercel/next.js/blob/master/packages/next/next-server/server/config.ts
 const nextConfig = {
   webpack: (config, options) => {
-    const { isServer } = options;
+    const {isServer} = options;
     config.module.rules.push({
       test: /\.(ogg|mp3|wav|mpe?g)$/i,
       exclude: config.exclude,
@@ -33,16 +33,13 @@ const nextConfig = {
 
     return config;
   },
+  output: 'export',
   compress: true,
   generateEtags: true,
   pageExtensions: ['tsx', 'mdx', 'ts'],
   poweredByHeader: false,
   productionBrowserSourceMaps: false,
-  svgo: {
-    multipass: true,
-    plugins: ['removeDimensions'],
-  },
-  strictMode: true,
+  reactStrictMode: true,
   swcMinify: true,
   trailingSlash: false,
   images: {

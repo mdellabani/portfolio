@@ -22,9 +22,8 @@
     "next": "^14.2.24",
     "react": "18",
     "react-dom": "18",
-    "react-icons": "^4.8.0",
-    "url-loader": "^4.1.1",
-    "use-sound": "^4.0.1"
+    "react-tech-icons": "^1.6.2",
+    "url-loader": "^4.1.1"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^12.1.0",
