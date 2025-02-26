@@ -33,14 +33,17 @@ const skills: SkillCategory[] = [
     category: 'Tools, Libraries and Frameworks',
     icons: [
       {icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg', label: 'Spring Boot'},
+      {icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg', label: 'Next.js'},
       {icon: '/icons/expo-icon.png', label: 'Expo (React Native)'},
       {icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg', label: 'Node.js'},
       {icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', label: 'React'},
       {icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg', label: 'GitLab CI'},
       {icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/circleci/circleci-plain.svg', label: 'CircleCI'},
       {icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg', label: 'Jenkins'},
+      {icon: '/icons/jfrog-icon.png', label: 'JFrog'},
       {icon: 'https://avatars.githubusercontent.com/u/3204514?s=200&v=4', label: 'SonarQube'},
       {icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg', label: 'Docker'},
+      {icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg', label: 'Azure'},
       {icon: '/icons/aws-icon.png', label: 'AWS'},
       {icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg', label: 'GitHub'},
     ],
@@ -99,8 +102,8 @@ const SkillIcon = memo(({icon, label}: Skill) => (
 const TechStack = memo(() => {
   return (
     <div style={{textAlign: 'center', marginBottom: '20px'}}>
-      <h1>
-        <strong>TECHNICAL PROFICIENCIES</strong>
+      <h1 style={{marginBottom: '20px', fontSize: '2rem'}}>
+        <strong>TECH STACK</strong>
       </h1>
       <div>
         {skills.map((skill, index) => (
