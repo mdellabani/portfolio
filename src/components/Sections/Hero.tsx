@@ -13,7 +13,7 @@ const Hero = memo(() => {
 
   return (
     <Section noPadding sectionId={SectionId.Hero}>
-      <div className="relative flex h-screen w-screen items-center justify-center">
+      <div className="relative flex h-screen w-screen items-center justify-center overflow-auto">
         <div className="opacity">
           <Image
             alt={`${name}-image`}
@@ -31,7 +31,6 @@ const Hero = memo(() => {
               <h1 className="line-1 anim-typewriter text-4xl font-bold text-white sm:text-5xl lg:text-5xl">{name}</h1>
               <h2 className="line-1 delay-typewriter text-l sm:text-5l lg:text-5l font-bold text-white">{role}</h2>
             </div>
-
             {description}
             <div className="flex gap-x-4 text-neutral-100">
               <Socials />
