@@ -8,7 +8,7 @@
     "build": "yarn compile && yarn next build",
     "dev": "yarn compile && yarn next dev",
     "start": "yarn next start",
-    "export": "yarn next export",
+    "postbuild": "echo '✅ Running postbuild script...' && next-sitemap",
     "lint": "yarn run -T prettier --write './src/**/*.{js,jsx,json,ts,tsx}' && eslint './src/**/*.{js,jsx,ts,tsx}' --fix --max-warnings=0",
     "sitemap": "yarn next-sitemap"
   },
