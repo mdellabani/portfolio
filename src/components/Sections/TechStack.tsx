@@ -9,7 +9,6 @@ interface SkillCategory {
   category: string;
   icons: Skill[];
 }
-const assetsPath = process.env.NODE_ENV === 'production' ? '/portfolio' : '';
 const skills: SkillCategory[] = [
   {
     category: 'Languages',
@@ -34,17 +33,17 @@ const skills: SkillCategory[] = [
     icons: [
       {icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg', label: 'Spring Boot'},
       {icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg', label: 'Next.js'},
-      {icon: `${assetsPath}/assets/expo-icon.png`, label: 'Expo (React Native)'},
+      {icon: '/assets/expo-icon.png', label: 'Expo (React Native)'},
       {icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg', label: 'Node.js'},
       {icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg', label: 'React'},
       {icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg', label: 'GitLab CI'},
       {icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/circleci/circleci-plain.svg', label: 'CircleCI'},
       {icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg', label: 'Jenkins'},
-      {icon: `${assetsPath}/assets/jfrog-icon.png`, label: 'JFrog'},
+      {icon: '/assets/jfrog-icon.png', label: 'JFrog'},
       {icon: 'https://avatars.githubusercontent.com/u/3204514?s=200&v=4', label: 'SonarQube'},
       {icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg', label: 'Docker'},
       {icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg', label: 'Azure'},
-      {icon: `${assetsPath}/assets/aws-icon.png`, label: 'AWS'},
+      {icon: '/assets/aws-icon.png', label: 'AWS'},
       {icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg', label: 'GitHub'},
     ],
   },
@@ -56,7 +55,7 @@ const skills: SkillCategory[] = [
         label: 'PostgreSQL',
       },
       {icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg', label: 'SQLite'},
-      {icon: `${assetsPath}/assets/neo4j-icon.png`, label: 'Neo4j'},
+      {icon: '/assets/neo4j-icon.png', label: 'Neo4j'},
     ],
   },
 ];
