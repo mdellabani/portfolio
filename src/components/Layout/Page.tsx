@@ -19,7 +19,7 @@ const Page: NextPage<HomepageMeta> = memo(({children, title, description}) => {
 
         <link href="/favicon.ico" rel="icon" sizes="any" />
         {/* <link href="/icon.svg" rel="icon" type="image/svg+xml" /> */}
-        <link href="/apple-touch-icon.png" rel="apple-touch-icon" />
+        {/* <link href="/apple-touch-icon.png" rel="apple-touch-icon" />s */}
         <link href="/site.webmanifest" rel="manifest" />
 
         {/* Open Graph : https://ogp.me/ */}
