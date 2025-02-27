@@ -14,6 +14,18 @@ export default function Document() {
           - https://github.com/facebook/react/issues/11538
           - https://bugs.chromium.org/p/chromium/issues/detail?id=872770 */}
         <meta content="notranslate" name="google" />
+         <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-FWS71Z6WM4"
+          ></script>
+          <script>
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-FWS71Z6WM4');
+            `}
+          </script>
       </Head>
       <body className="bg-black">
         <Main />
