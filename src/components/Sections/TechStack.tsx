@@ -1,3 +1,4 @@
+import {useRouter} from 'next/router';
 import React, {memo} from 'react';
 
 interface Skill {
@@ -60,9 +61,12 @@ const skills: SkillCategory[] = [
   },
 ];
 
-const SkillIcon = memo(({icon, label}: Skill) => (
+const SkillIcon = memo(({icon, label}: Skill) => {
+  const {basePath} = useRouter();
+  const src = icon.startsWith('/') ? `${basePath}${icon}` : icon;
+  return (
   <div className="skill-icon" style={{position: 'relative', display: 'inline-block', margin: '5px'}}>
-    <img alt={label} src={icon} style={{width: '50px', height: '50px', cursor: 'pointer'}} />
+    <img alt={label} src={src} style={{width: '50px', height: '50px', cursor: 'pointer'}} />
     {/* Tooltip */}
     <div className="tooltip">{label}</div>
 
@@ -96,7 +100,8 @@ const SkillIcon = memo(({icon, label}: Skill) => (
       `}
     </style>
   </div>
-));
+  );
+});
 
 const TechStack = memo(() => {
   return (

@@ -1,6 +1,6 @@
 /* eslint-env node */
 module.exports = {
-  siteUrl: 'mdellabani.playit.team',
+  siteUrl: 'https://mdellabani.github.io/portfolio',
   exclude: ['/404*', '/500*'],
   transform: async (config, path) => {
     return {

@@ -42,6 +42,8 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   trailingSlash: false,
+  basePath: isProd ? '/portfolio' : '',
+  assetPrefix: isProd ? '/portfolio/' : '',
   images: {
     domains: ['images.unsplash.com', 'source.unsplash.com'],
   },
