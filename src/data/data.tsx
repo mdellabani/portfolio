@@ -322,6 +322,83 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
+    date: '04/2025 - Present',
+    location: 'Real-Time Analytical Platforms (ActiveViam Accounts) - Full Remote',
+    title: 'Tech Lead',
+    content: (
+      <>
+        Leading technical delivery and architecture for real-time risk analytics platforms serving Tier-1 banking
+        clients. Driving design decisions, mentoring a team of 6 engineers, and owning end-to-end technical execution
+        with full autonomy — from migration strategy to production-grade feature delivery.
+        <br />
+        <h3 style={{marginTop: '15px', marginBottom: '5px'}}>Santander — Market Risk</h3>
+        <div className="bullet">
+          <span className="bullet-icon">🔥</span>{' '}
+          <span className="bullet-text">
+            <strong>Direct Query with Databricks:</strong> Owned the full setup of Direct Query from A to Z, enabling
+            the platform to query risk data directly from <strong>Databricks</strong> at scale — covering schema design,
+            SQL dialect adaptation, naming conventions, and production deployment.
+          </span>
+        </div>
+        <div className="bullet">
+          <span className="bullet-icon">🚀</span>{' '}
+          <span className="bullet-text">
+            <strong>Platform Migration:</strong> Key driver of the platform migration, delivering it end-to-end
+            while simultaneously implementing new features across <strong>PnL</strong>,{' '}
+            <strong>Sensitivity</strong>, and <strong>VaR</strong> cubes.
+          </span>
+        </div>
+        <div className="bullet">
+          <span className="bullet-icon">📈</span>{' '}
+          <span className="bullet-text">
+            <strong>Performance & Observability:</strong> Tuned query performance and set up end-to-end observability
+            with <strong>OpenTelemetry</strong>, <strong>Prometheus</strong>, and <strong>Grafana</strong> to ensure
+            reliability at production scale.
+          </span>
+        </div>
+        <h3 style={{marginTop: '15px', marginBottom: '5px'}}>BBVA — Risk Viewer</h3>
+        <div className="bullet">
+          <span className="bullet-icon">🔥</span>{' '}
+          <span className="bullet-text">
+            <strong>Projection Engine:</strong> Leading the design and implementation of the{' '}
+            <strong>Rho Basis Projection</strong> feature — a high-priority capability for traders that projects basis
+            swap curves into related curves for sensitivity analysis across multiple currencies.
+          </span>
+        </div>
+        <div className="bullet">
+          <span className="bullet-icon">🚀</span>{' '}
+          <span className="bullet-text">
+            <strong>Platform Migration:</strong> Led a cross-framework migration spanning{' '}
+            <strong>Spring Boot</strong>, <strong>Spring Batch</strong>, <strong>Atoti</strong>,{' '}
+            <strong>JDK 21</strong>, and <strong>AWS libraries</strong> — ensuring continuity for all existing risk
+            calculations and reporting workflows.
+          </span>
+        </div>
+        <div className="bullet">
+          <span className="bullet-icon">⚡</span>{' '}
+          <span className="bullet-text">
+            <strong>Performance Optimization:</strong> Driving performance tuning and caching strategies for real-time
+            projection calculations across large portfolios.
+          </span>
+        </div>
+        <div>
+          <span className="tag">Atoti</span>
+          <span className="tag">Direct Query</span>
+          <span className="tag">Databricks</span>
+          <span className="tag">Market Risk</span>
+          <span className="tag">Spring Boot</span>
+          <span className="tag">Java 21</span>
+          <span className="tag">OpenTelemetry</span>
+          <span className="tag">Kafka</span>
+          <span className="tag">AWS</span>
+          <span className="tag">PostgreSQL</span>
+          <span className="tag">Performance</span>
+          <span className="tag">Team Leadership</span>
+        </div>
+      </>
+    ),
+  },
+  {
     date: '09/2023 - 02/2025',
     location: 'Huawei - Full Remote (1 week per month in Grenoble)',
     title: 'R&D Software Architect',
