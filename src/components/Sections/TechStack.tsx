@@ -66,7 +66,7 @@ const SkillIcon = memo(({icon, label}: Skill) => {
   const src = icon.startsWith('/') ? `${basePath}${icon}` : icon;
   return (
   <div className="skill-icon" style={{position: 'relative', display: 'inline-block', margin: '5px'}}>
-    <img alt={label} src={src} style={{width: '50px', height: '50px', cursor: 'pointer'}} />
+    <img alt={label} src={src} style={{width: '35px', height: '35px', cursor: 'pointer'}} />
     {/* Tooltip */}
     <div className="tooltip">{label}</div>
 
