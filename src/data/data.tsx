@@ -108,11 +108,11 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `R&D software enginner with strong technical skills. Autonomous, self-motivated
-  and curious, but mostly not afraid of new challenges and eager to learn new technologies.
-  Open minded, sociable and used to work in a multicultural collaborative environment. As
-  an engineering manager, I strive at making a great product for both users and developers :
-  Foster innovation, promote best practice and ensure engineers’ happiness.`,
+  description: `R&D Software Architect with deep expertise in high-performance systems and software design.
+  Autonomous, self-motivated and curious, I thrive on solving hard problems and pushing technical boundaries.
+  Open minded, sociable and used to working in multicultural collaborative environments. Whether leading
+  a team or diving deep into architecture, I strive at building great products for both users and developers:
+  foster innovation, promote best practices and deliver top-notch performance.`,
   aboutItems: [
     {label: 'Location', text: 'Saint-Medard, 64370, France', Icon: MapIcon},
     {label: 'Age', text: calculateAge('1990-11-27'), Icon: CalendarIcon},
@@ -324,7 +324,7 @@ export const experience: TimelineItem[] = [
   {
     date: '09/2023 - 02/2025',
     location: 'Huawei - Full Remote (1 week per month in Grenoble)',
-    title: 'R&D Software Engineer Freelance',
+    title: 'R&D Software Architect',
     content: (
       <>
         Grenoble Fermat Lab. is responsible for advanced technical research and development of Model-based and Formal
