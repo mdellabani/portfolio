@@ -27,40 +27,36 @@ const Contact = memo(() => {
   const {headerText, description, items} = contact;
   return (
     <Section className="bg-retro-surface" sectionId={SectionId.Contact}>
-      <div className="flex flex-col gap-y-6">
-        <div className="flex flex-col gap-6 md:flex-row md:items-center">
-          <MailIcon className="hidden h-16 w-16 text-retro-green md:block" />
+      <div className="flex flex-col gap-y-8">
+        <div className="flex flex-col items-center gap-y-2 text-center">
+          <MailIcon className="h-10 w-10 text-retro-green" />
           <h2 className="text-2xl font-bold text-retro-green">{headerText}</h2>
+          {description && <p className="max-w-lg text-sm leading-6 text-retro-muted">{description}</p>}
         </div>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-          <div className="order-2 col-span-1 md:order-1 md:col-span-2">
-            <ContactForm />
-          </div>
-          <div className="order-1 col-span-1 flex flex-col gap-y-4 md:order-2 md:col-span-1">
-            <p className="prose leading-6 text-retro-text">{description}</p>
-            <dl className="flex flex-col space-y-4 text-base text-retro-muted sm:space-y-2">
-              {items.map(({type, text, href}) => {
-                const {Icon, srLabel} = ContactValueMap[type];
-                return (
-                  <div key={srLabel}>
-                    <dt className="sr-only">{srLabel}</dt>
-                    <dd className="flex items-center">
-                      <a
-                        className={classNames(
-                          '-m-2 flex p-2 text-retro-text hover:text-retro-green focus:outline-none focus:ring-2 focus:ring-retro-green',
-                          {'hover:text-retro-cyan': href},
-                        )}
-                        href={href}
-                        target="_blank">
-                        <Icon aria-hidden="true" className="h-4 w-4 flex-shrink-0 text-retro-cyan sm:h-5 sm:w-5" />
-                        <span className="ml-3 text-sm sm:text-base">{text}</span>
-                      </a>
-                    </dd>
-                  </div>
-                );
-              })}
-            </dl>
-          </div>
+        <dl className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 border-y border-retro-border py-4">
+          {items.map(({type, text, href}) => {
+            const {Icon, srLabel} = ContactValueMap[type];
+            return (
+              <div key={srLabel}>
+                <dt className="sr-only">{srLabel}</dt>
+                <dd>
+                  <a
+                    className={classNames(
+                      'flex items-center gap-x-2 text-retro-text transition-colors hover:text-retro-green focus:outline-none focus:ring-2 focus:ring-retro-green',
+                      {'hover:text-retro-cyan': href},
+                    )}
+                    href={href}
+                    target="_blank">
+                    <Icon aria-hidden="true" className="h-4 w-4 flex-shrink-0 text-retro-cyan sm:h-5 sm:w-5" />
+                    <span className="text-sm sm:text-base">{text}</span>
+                  </a>
+                </dd>
+              </div>
+            );
+          })}
+        </dl>
+        <div className="mx-auto w-full max-w-screen-md">
+          <ContactForm />
         </div>
       </div>
     </Section>
