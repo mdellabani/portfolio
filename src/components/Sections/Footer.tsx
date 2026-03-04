@@ -19,7 +19,7 @@ const Footer = memo(() => (
       <div className="flex gap-x-4 text-retro-muted">
         <Socials />
       </div>
-      <span className="text-sm text-retro-green" style={{textShadow: '0 0 6px #3a9a60'}}>&copy; Copyright 2022 Tim Baker</span>
+      <span className="text-sm text-retro-green">&copy; Copyright 2022 Tim Baker</span>
     </div>
   </div>
 ));

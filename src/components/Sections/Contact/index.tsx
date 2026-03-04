@@ -30,7 +30,7 @@ const Contact = memo(() => {
       <div className="flex flex-col gap-y-6">
         <div className="flex flex-col gap-6 md:flex-row md:items-center">
           <MailIcon className="hidden h-16 w-16 text-retro-green md:block" />
-          <h2 className="text-2xl font-bold text-retro-green" style={{textShadow: '0 0 8px #3a9a60'}}>{headerText}</h2>
+          <h2 className="text-2xl font-bold text-retro-green">{headerText}</h2>
         </div>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
           <div className="order-2 col-span-1 md:order-1 md:col-span-2">

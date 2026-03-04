@@ -1,5 +1,6 @@
 import {ChevronDownIcon} from '@heroicons/react/outline';
 import classNames from 'classnames';
+import Image from 'next/image';
 import Link from 'next/link';
 import {memo} from 'react';
 
@@ -8,18 +9,29 @@ import Section from '../Layout/Section';
 import Socials from '../Socials';
 
 const Hero = memo(() => {
-  const {name, role, description, actions} = heroData;
+  const {imageSrc, name, role, description, actions} = heroData;
 
   return (
     <Section noPadding sectionId={SectionId.Hero}>
       <div className="relative flex h-screen w-screen items-center justify-center overflow-auto bg-retro-base">
+        {!!imageSrc && (
+          <Image
+            alt={`${name}-image`}
+            className="absolute z-0 object-cover"
+            fill
+            placeholder="blur"
+            priority
+            src={imageSrc}
+          />
+        )}
+        <div className="absolute inset-0 z-[1] bg-retro-base/70" />
         <div className="z-10 max-w-screen-lg px-4 lg:px-0">
-          <div className="flex flex-col items-center gap-y-6 border border-retro-border bg-retro-surface p-6 text-center shadow-lg">
+          <div className="flex flex-col items-center gap-y-6 border border-retro-border bg-retro-surface/90 p-6 text-center shadow-lg backdrop-blur-sm">
             <div className="mb-10 flex flex-col">
-              <h1 className="line-1 anim-typewriter font-pixel text-xl font-bold text-retro-green sm:text-2xl lg:text-3xl" style={{textShadow: '0 0 8px #3a9a60'}}>
+              <h1 className="line-1 anim-typewriter font-pixel text-xl font-bold text-retro-green sm:text-2xl lg:text-3xl">
                 {name}
               </h1>
-              <h2 className="line-1 delay-typewriter text-l sm:text-5l lg:text-5l font-bold text-retro-amber" style={{textShadow: '0 0 6px #d4a04a'}}>
+              <h2 className="line-1 delay-typewriter text-l sm:text-5l lg:text-5l font-bold text-retro-amber">
                 {role}
               </h2>
             </div>
@@ -31,7 +43,7 @@ const Hero = memo(() => {
               {actions.map(({href, text, primary, Icon}) => (
                 <Link
                   className={classNames(
-                    'flex gap-x-2 border bg-none px-4 py-2 text-sm font-medium text-white ring-offset-retro-base hover:bg-retro-base/50 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-base',
+                    'flex gap-x-2 border bg-retro-surface/80 px-4 py-2 text-sm font-medium ring-offset-retro-base hover:bg-retro-base/50 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-base',
                     primary ? 'border-retro-green text-retro-green ring-retro-green' : 'border-retro-amber text-retro-amber ring-retro-amber',
                   )}
                   href={href}
@@ -44,7 +56,7 @@ const Hero = memo(() => {
             </div>
           </div>
         </div>
-        <div className="absolute inset-x-0 bottom-6 flex justify-center">
+        <div className="absolute inset-x-0 bottom-6 z-10 flex justify-center">
           <Link
             className="border border-retro-border bg-retro-surface p-1 ring-retro-green ring-offset-2 ring-offset-retro-base focus:outline-none focus:ring-2 sm:p-2"
             href={`/#${SectionId.About}`}

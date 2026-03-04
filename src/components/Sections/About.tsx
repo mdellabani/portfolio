@@ -19,7 +19,7 @@ const About = memo(() => {
         )}
         <div className={classNames('col-span-1 flex flex-col gap-y-6', {'md:col-span-3': !!profileImageSrc})}>
           <div className="flex flex-col gap-y-2">
-            <h2 className="text-2xl font-bold text-retro-green" style={{textShadow: '0 0 8px #3a9a60'}}>About me</h2>
+            <h2 className="text-2xl font-bold text-retro-green">About me</h2>
             <p className="prose prose-sm text-retro-text sm:prose-base">{description}</p>
           </div>
           <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2">

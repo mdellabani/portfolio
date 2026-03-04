@@ -5,14 +5,14 @@ module.exports = {
     extend: {
       colors: {
         retro: {
-          base: '#0a0a0a',
-          surface: '#111111',
-          border: '#2a2a2a',
-          text: '#d0d0d0',
-          muted: '#777777',
-          green: '#3a9a60',
-          amber: '#d4a04a',
-          cyan: '#5ab8b8',
+          base: '#f5f0e6',
+          surface: '#ebe6d8',
+          border: '#c9c4b2',
+          text: '#1a1a1a',
+          muted: '#555555',
+          green: '#1a7a3a',
+          amber: '#b8860b',
+          cyan: '#1a8a8a',
         },
       },
       fontFamily: {
