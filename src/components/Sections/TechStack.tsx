@@ -80,10 +80,11 @@ const SkillIcon = memo(({icon, label}: Skill) => {
         .tooltip {
           visibility: hidden;
           opacity: 0;
-          background-color: black;
-          color: #fff;
+          background-color: #111111;
+          color: #d0d0d0;
           text-align: center;
-          border-radius: 6px;
+          border: 1px solid #2a2a2a;
+          border-radius: 0;
           padding: 5px 10px;
           position: absolute;
           bottom: 125%;
@@ -106,20 +107,20 @@ const SkillIcon = memo(({icon, label}: Skill) => {
 const TechStack = memo(() => {
   return (
     <div id="tech-stack" style={{textAlign: 'center', marginBottom: '20px', marginTop: '-20px'}}>
-      <h1 style={{marginBottom: '20px', fontSize: '2rem'}}>
-        <strong>TECH STACK</strong>
+      <h1 className="font-pixel" style={{marginBottom: '20px', fontSize: '1rem', color: '#3a9a60', textShadow: '0 0 8px #3a9a60', letterSpacing: '0.1em'}}>
+        TECH STACK
       </h1>
       <div>
         {skills.map((skill, index) => (
           <div key={skill.category} style={{marginBottom: '20px'}}>
-            <h2>{skill.category}</h2>
+            <h2 style={{color: '#d0d0d0'}}>{skill.category}</h2>
             <div style={{display: 'flex', justifyContent: 'center', flexWrap: 'wrap'}}>
               {skill.icons.map(({icon, label}) => (
                 <SkillIcon icon={icon} key={label} label={label} />
               ))}
             </div>
             {/* Horizontal line with equal margin */}
-            {index < skills.length - 1 && <hr style={{margin: '20px 0'}} />}
+            {index < skills.length - 1 && <hr style={{margin: '20px 0', borderColor: '#2a2a2a'}} />}
           </div>
         ))}
       </div>

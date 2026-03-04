@@ -10,8 +10,8 @@ import Timeline from './TimelineItem';
 
 const Resume = memo(() => {
   return (
-    <Section className="bg-neutral-100" sectionId={SectionId.Resume}>
-      <div className="flex flex-col divide-y-2 divide-neutral-300">
+    <Section className="bg-retro-base" sectionId={SectionId.Resume}>
+      <div className="flex flex-col divide-y divide-retro-border">
         <TechStack />
         <ResumeSection title="Work">
           {experience.map((item, index) => (

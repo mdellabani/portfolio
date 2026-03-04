@@ -59,7 +59,7 @@ const ContactForm = memo(() => {
   );
 
   const inputClasses =
-    'bg-neutral-700 border-0 focus:border-0 focus:outline-none focus:ring-1 focus:ring-orange-600 rounded-md placeholder:text-neutral-400 placeholder:text-sm text-neutral-200 text-sm';
+    'bg-retro-base border border-retro-border focus:border-retro-green focus:outline-none focus:ring-1 focus:ring-retro-green rounded-none placeholder:text-retro-muted placeholder:text-sm text-retro-text text-sm';
 
   return (
     <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage} ref={form}>
@@ -84,7 +84,7 @@ const ContactForm = memo(() => {
       />
       <button
         aria-label="Submit contact form"
-        className="mx-auto w-max rounded-full border-2 border-orange-600 bg-stone-900 px-4 py-2 text-sm font-medium text-white shadow-md outline-none hover:bg-stone-800 focus:ring-2 focus:ring-orange-600 focus:ring-offset-2 focus:ring-offset-stone-800"
+        className="mx-auto w-max border border-retro-green bg-retro-base px-4 py-2 text-sm font-medium text-retro-green shadow-md outline-none hover:bg-retro-surface focus:ring-2 focus:ring-retro-green focus:ring-offset-2 focus:ring-offset-retro-base"
         type="submit">
         Send Message
       </button>

@@ -34,28 +34,49 @@ html {
 body {
   position: relative;
   width: 100%;
-  color: #444444;
-  font-family: 'Chakra Petch', sans-serif;
-  background-color: #fafafa;
+  color: #d0d0d0;
+  font-family: 'VT323', monospace;
+  font-size: 1.125rem;
+  background-color: #0a0a0a;
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 1px,
+    rgba(255, 255, 255, 0.03) 1px,
+    rgba(255, 255, 255, 0.03) 2px
+  );
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  background: radial-gradient(ellipse at center, transparent 60%, rgba(0, 0, 0, 0.4) 100%);
 }
 
 .tag {
   display: inline-block;
   padding: 5px 10px;
   margin: 5px;
-  border: 2px solid #1c9bce;
-  color: #1c9bce; 
-  border-radius: 15px;
-  font-size: 0.85rem;
-  font-weight: bold;
+  border: 1px solid #3a9a60;
+  color: #3a9a60;
+  border-radius: 0;
+  font-size: 0.9rem;
+  font-weight: 400;
   text-transform: uppercase;
-  background-color: transparent; 
+  background-color: transparent;
 }
+
 .timeline-dot {
   width: 12px;
   height: 12px;
-  background-color: #f5f5f5;
-  border-color: #e0e0e0;
+  background-color: #0a0a0a;
+  border-color: #2a2a2a;
   border-width: 2px;
   border-radius: 50%;
   position: absolute;
@@ -66,47 +87,48 @@ body {
 
 .timeline-line {
   width: 2px;
-  background-color: #e0e0e0;
+  background-color: #2a2a2a;
   position: absolute;
   top: 30px;
-  bottom: -30px; 
-  left: 15px; 
+  bottom: -30px;
+  left: 15px;
 }
 
 .timeline-date {
   position: absolute;
-  left: -60px; /* Adjust for desktop */
+  left: -60px;
   top: 50%;
   transform: translateY(-50%);
   text-align: right;
-  width: 50px; 
+  width: 50px;
+  color: #d4a04a;
 }
 
 .active .timeline-dot {
-  border-color: #fafafa;
-  background-color: #fb923c;
+  border-color: #0a0a0a;
+  background-color: #d4a04a;
 }
 
 .active .timeline-line {
-  background-color: #fb923c;
+  background-color: #d4a04a;
 }
 
 @media (max-width: 768px) {
   .timeline-date {
-    position: static; /* Reset position for mobile */
-    left: auto; /* Reset left */
-    top: auto; /* Reset top */
-    transform: none; /* Remove transform */
-    text-align: center; /* Center align for mobile */
-    width: auto; /* Allow it to take full width */
+    position: static;
+    left: auto;
+    top: auto;
+    transform: none;
+    text-align: center;
+    width: auto;
   }
 
   .timeline-dot {
-    left: 5px; /* Adjust dot position for mobile */
+    left: 5px;
   }
 
   .timeline-line {
-    display: none; /* Hide line on mobile */
+    display: none;
   }
 }
 
@@ -135,20 +157,19 @@ th {
 }
 
 a {
-  color: #1c9bce;
+  color: #5ab8b8;
 }
 a:hover {
-   color: rgb(241, 51, 140)
+  color: #3a9a60;
 }
 
 /* Heading Animation */
-@media only screen and (min-width: 576px){
-
-  .line-1{
+@media only screen and (min-width: 576px) {
+  .line-1 {
     position: relative;
     top: 3rem;
     margin: 0 auto;
-    border-right: 2px solid rgba(255,255,255,.75);
+    border-right: 2px solid rgba(58, 154, 96, 0.75);
     font-size: 180%;
     text-align: center;
     white-space: nowrap;
@@ -156,35 +177,35 @@ a:hover {
     transform: translateY(-50%);
   }
 
-  .anim-typewriter{
+  .anim-typewriter {
     animation: typewriter-name 3s steps(22) 1s 1 normal both,
-              blinkTextCursor 500ms steps(22) infinite normal;
+      blinkTextCursor 500ms steps(22) infinite normal;
   }
 
   .delay-typewriter {
     animation: typewriter-role 3s steps(22) 1s 1 normal both,
-    blinkTextCursor 500ms steps(22) infinite normal;
-    animation-delay: 3.5s; 
+      blinkTextCursor 500ms steps(22) infinite normal;
+    animation-delay: 3.5s;
   }
 
   @keyframes typewriter-name {
-      from{width: 0;}
-      to{width: 550px;}
+    from { width: 0; }
+    to { width: 550px; }
   }
 
   @keyframes typewriter-role {
-    from{width: 0;}
-    to{width: 750px;}
-}
+    from { width: 0; }
+    to { width: 750px; }
+  }
 
-  @keyframes blinkTextCursor{
-      from{border-right-color: rgba(255,255,255,.75);}
-      to{border-right-color: transparent;}
+  @keyframes blinkTextCursor {
+    from { border-right-color: rgba(58, 154, 96, 0.75); }
+    to { border-right-color: transparent; }
   }
 }
 
 .opacity {
-  opacity : 0.65
+  opacity: 0.65;
 }
 
 .playButton {
@@ -196,8 +217,8 @@ a:hover {
   top: -3px;
 }
 
-input[type="range"] {
-  background-color: #27ae60;
+input[type='range'] {
+  background-color: #3a9a60;
 }
 
 @media (max-width: 900px) {
@@ -207,8 +228,8 @@ input[type="range"] {
 }
 
 .caption {
-  background-color: white;
-  color: black;
-  font-weight: 500;
+  background-color: #111111;
+  color: #d0d0d0;
+  font-weight: 400;
   text-align: center;
 }
