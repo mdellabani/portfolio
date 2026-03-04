@@ -66,23 +66,23 @@ export const heroData: Hero = {
   role: `Tech Lead | Scalable & High-Performance Systems`,
   description: (
     <>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+      <p className="prose-sm text-retro-text sm:prose-base lg:prose-lg">
         I am a seasoned R&D software engineer with deep expertise in Java, JVM internals, and high-performance database
         systems. My work focuses on building efficient, scalable, and reliable software, with a strong emphasis on
         concurrency, distributed systems, and observability. I have extensive experience in CI/CD, containerization, and
         monitoring stacks, ensuring robust and maintainable deployments.
       </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+      <p className="prose-sm text-retro-text sm:prose-base lg:prose-lg">
         Passionate about software architecture and clean code, I continuously explore emerging technologies and
         experiment with new features to solve real-world challenges. I take a pragmatic approach to reducing technical
         debt, optimizing performance, and designing systems that balance scalability, maintainability, and long-term
         efficiency.
       </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+      <p className="prose-sm text-retro-text sm:prose-base lg:prose-lg">
         Beyond technical expertise, I have experience leading teams, mentoring engineers, and contributing to product
         roadmaps, ensuring alignment between technical execution and business goals.
       </p>
-      {/* <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+      {/* <p className="prose-sm text-retro-text sm:prose-base lg:prose-lg">
         Currently, I lead development as CTO of a sports-focused web and mobile application, leveraging my expertise
         across multiple technologies to drive technical excellence.
       </p> */}

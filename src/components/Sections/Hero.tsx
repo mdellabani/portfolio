@@ -26,7 +26,7 @@ const Hero = memo(() => {
         )}
         <div className="absolute inset-0 z-[1] bg-retro-base/70" />
         <div className="z-10 max-w-screen-lg px-4 lg:px-0">
-          <div className="flex flex-col items-center gap-y-6 border border-retro-border bg-retro-surface/90 p-6 text-center shadow-lg backdrop-blur-sm">
+          <div className="flex flex-col items-center gap-y-6 border border-retro-border bg-retro-base/75 p-6 text-center shadow-lg backdrop-blur-sm">
             <div className="mb-10 flex flex-col">
               <h1 className="line-1 anim-typewriter font-pixel text-xl font-bold text-retro-green sm:text-2xl lg:text-3xl">
                 {name}

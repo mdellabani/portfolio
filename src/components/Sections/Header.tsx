@@ -37,7 +37,7 @@ const DesktopNav = memo(
     const activeClass = classNames(baseClass, 'text-retro-green');
     const inactiveClass = classNames(baseClass, 'text-retro-muted');
     return (
-      <header className="fixed top-0 z-50 hidden w-full border-b border-retro-border bg-retro-base p-4 sm:block" id={headerID}>
+      <header className="fixed top-0 z-50 hidden w-full border-b border-retro-border bg-retro-base/75 p-4 backdrop-blur-sm sm:block" id={headerID}>
         <nav className="flex justify-center gap-x-8">
           {navSections.map(section => (
             <NavItem
