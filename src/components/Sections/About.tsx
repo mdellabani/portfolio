@@ -13,7 +13,7 @@ const About = memo(() => {
         {!!profileImageSrc && (
           <div className="col-span-1 flex justify-center md:justify-start">
             <div className="relative h-24 w-24 overflow-hidden md:h-32 md:w-32">
-              <Image alt="about-me-image" layout="fill" objectFit="cover" src={profileImageSrc} />
+              <Image alt="Mahieddine Dellabani - Tech Lead and Software Architect" layout="fill" objectFit="cover" src={profileImageSrc} />
             </div>
           </div>
         )}

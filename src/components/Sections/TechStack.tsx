@@ -107,9 +107,9 @@ const SkillIcon = memo(({icon, label}: Skill) => {
 const TechStack = memo(() => {
   return (
     <div id="tech-stack" style={{textAlign: 'center', marginBottom: '20px', marginTop: '-20px'}}>
-      <h1 className="font-pixel" style={{marginBottom: '20px', fontSize: '1rem', color: '#1a7a3a', letterSpacing: '0.1em'}}>
+      <h2 className="font-pixel" style={{marginBottom: '20px', fontSize: '1rem', color: '#1a7a3a', letterSpacing: '0.1em'}}>
         TECH STACK
-      </h1>
+      </h2>
       <div>
         {skills.map((skill, index) => (
           <div key={skill.category} style={{marginBottom: '20px'}}>

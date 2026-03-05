@@ -37,8 +37,16 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Mahieddine Dellabani',
-  description: 'Mahieddine Dellabani Resume Website',
+  title: 'Mahieddine Dellabani | Tech Lead — High-Performance Java, Distributed Systems & Financial Analytics',
+  description:
+    'Tech Lead & Software Architect building high-performance Java applications, scalable distributed systems & real-time analytics for financial services. Expert in FRTB, market risk & OLAP databases.',
+  ogImageUrl: 'https://mdellabani.github.io/portfolio/og-image.png',
+  twitterCardType: 'summary_large_image',
+  twitterTitle:
+    'Mahieddine Dellabani | Tech Lead — High-Performance Java, Distributed Systems & Financial Analytics',
+  twitterDescription:
+    'Tech Lead & Software Architect building high-performance Java applications, scalable distributed systems & real-time analytics for financial services.',
+  twitterImageUrl: 'https://mdellabani.github.io/portfolio/og-image.png',
 };
 
 /**
@@ -63,14 +71,14 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
 export const heroData: Hero = {
   imageSrc: heroImage,
   name: `Mahieddine Dellabani`,
-  role: `Tech Lead | Scalable & High-Performance Systems`,
+  role: `Tech Lead & Software Architect | High-Performance Java & Distributed Systems`,
   description: (
     <>
       <p className="prose-sm text-retro-text sm:prose-base lg:prose-lg">
-        I am a seasoned R&D software engineer with deep expertise in Java, JVM internals, and high-performance database
-        systems. My work focuses on building efficient, scalable, and reliable software, with a strong emphasis on
-        concurrency, distributed systems, and observability. I have extensive experience in CI/CD, containerization, and
-        monitoring stacks, ensuring robust and maintainable deployments.
+        Seasoned Tech Lead and Software Architect with deep expertise in Java, JVM internals, and high-performance
+        database systems. I build scalable distributed systems and real-time analytics platforms for financial
+        services — from in-memory OLAP engines to market risk and FRTB solutions. Strong emphasis on concurrency,
+        observability, and production-grade deployments.
       </p>
       <p className="prose-sm text-retro-text sm:prose-base lg:prose-lg">
         Passionate about software architecture and clean code, I continuously explore emerging technologies and
@@ -108,11 +116,11 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `R&D Software Architect with deep expertise in high-performance systems and software design.
-  Autonomous, self-motivated and curious, I thrive on solving hard problems and pushing technical boundaries.
-  Open minded, sociable and used to working in multicultural collaborative environments. Whether leading
-  a team or diving deep into architecture, I strive at building great products for both users and developers:
-  foster innovation, promote best practices and deliver top-notch performance.`,
+  description: `Tech Lead and Software Architect with 10+ years building high-performance Java applications
+    and scalable distributed systems. Specialized in real-time analytics, in-memory databases, and financial
+    services platforms including market risk, credit risk, and FRTB. Autonomous, curious, and experienced in
+    multicultural environments. Whether leading a team or diving deep into architecture, I build great products
+    for both users and developers: fostering innovation, promoting best practices, and delivering top-notch performance.`,
   aboutItems: [
     {label: 'Location', text: 'Saint-Medard, 64370, France', Icon: MapIcon},
     {label: 'Age', text: calculateAge('1990-11-27'), Icon: CalendarIcon},

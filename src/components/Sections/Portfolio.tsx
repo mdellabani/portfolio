@@ -78,7 +78,7 @@ const ItemOverlay = memo(({item: {url, title}}: {item: PortfolioItem}) => {
       target="_blank">
       <div className="relative h-full w-full p-4">
         <div className="flex h-full w-full flex-col gap-y-2 overflow-y-auto">
-          <h2 className="text-center font-bold text-retro-base opacity-100">{title}</h2>
+          <h3 className="text-center font-bold text-retro-base opacity-100">{title}</h3>
         </div>
         <ExternalLinkIcon className="absolute bottom-1 right-1 h-4 w-4 shrink-0 text-retro-base sm:bottom-2 sm:right-2" />
       </div>

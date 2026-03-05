@@ -7,7 +7,7 @@ export interface HomepageMeta extends PropsWithChildren {
   title: string;
   description: string;
   ogImageUrl?: string;
-  twitterCardType?: 'summary' | 'summary_large';
+  twitterCardType?: 'summary' | 'summary_large_image';
   twitterTitle?: string;
   twitterSite?: string;
   twitterCreator?: string;

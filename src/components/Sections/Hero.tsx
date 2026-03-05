@@ -16,7 +16,7 @@ const Hero = memo(() => {
       <div className="relative flex h-screen w-screen items-center justify-center overflow-auto">
         {!!imageSrc && (
           <Image
-            alt={`${name}-image`}
+            alt={`${name} - Tech Lead and Software Architect portfolio`}
             className="absolute z-0 object-cover"
             fill
             placeholder="blur"
