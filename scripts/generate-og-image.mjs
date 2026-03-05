@@ -84,6 +84,11 @@ const html = `<!DOCTYPE html>
     color: #1a8a8a;
   }
 
+  .tag.red {
+    border-color: #8b3a3a;
+    color: #8b3a3a;
+  }
+
   .url {
     font-size: 13px;
     color: #555555;
@@ -105,17 +110,20 @@ const html = `<!DOCTYPE html>
       <span class="tag">Java</span>
       <span class="tag">TypeScript</span>
       <span class="tag">Python</span>
-      <span class="tag">Distributed Systems</span>
-      <span class="tag">Real-Time Analytics</span>
-      <span class="tag amber">FRTB</span>
-      <span class="tag amber">Market Risk</span>
-      <span class="tag amber">Credit Risk</span>
-      <span class="tag cyan">Next.js</span>
-      <span class="tag cyan">React</span>
       <span class="tag cyan">AWS</span>
+      <span class="tag cyan">Kubernetes</span>
+      <span class="tag cyan">Databases</span>
       <span class="tag cyan">OpenTelemetry</span>
       <span class="tag cyan">Spring Boot</span>
-      <span class="tag cyan">OLAP</span>
+      <span class="tag cyan">Next.js</span>
+      <span class="tag cyan">React</span>
+      <span class="tag amber">OLAP</span>
+      <span class="tag amber">Distributed Systems</span>
+      <span class="tag amber">Real-Time Analytics</span>
+      <span class="tag amber">Financial Analytics</span>
+      <span class="tag amber">High-Performance</span>
+
+      
     </div>
     <div class="url">mdellabani.github.io/portfolio</div>
   </div>
