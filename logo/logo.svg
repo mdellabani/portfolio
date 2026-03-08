@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Outer frame -->
+  <rect x="8" y="8" width="184" height="184" rx="6" fill="none" stroke="#1a7a3a" stroke-width="3"/>
+  <!-- Amber corner accents -->
+  <rect x="8" y="8" width="20" height="3" fill="#b8860b"/>
+  <rect x="8" y="8" width="3" height="20" fill="#b8860b"/>
+  <rect x="172" y="8" width="20" height="3" fill="#b8860b"/>
+  <rect x="189" y="8" width="3" height="20" fill="#b8860b"/>
+  <rect x="8" y="189" width="20" height="3" fill="#b8860b"/>
+  <rect x="8" y="172" width="3" height="20" fill="#b8860b"/>
+  <rect x="172" y="189" width="20" height="3" fill="#b8860b"/>
+  <rect x="189" y="172" width="3" height="20" fill="#b8860b"/>
+  <!-- Terminal prompt > as pixel art (thicker, 2-block wide) -->
+  <rect x="28" y="44" width="14" height="14" fill="#1a7a3a"/>
+  <rect x="42" y="44" width="14" height="14" fill="#1a7a3a"/>
+  <rect x="42" y="58" width="14" height="14" fill="#1a7a3a"/>
+  <rect x="56" y="58" width="14" height="14" fill="#1a7a3a"/>
+  <rect x="56" y="72" width="14" height="14" fill="#1a7a3a"/>
+  <rect x="70" y="72" width="14" height="14" fill="#1a7a3a"/>
+  <rect x="70" y="86" width="14" height="14" fill="#1a7a3a"/>
+  <rect x="84" y="86" width="14" height="14" fill="#1a7a3a"/>
+  <rect x="70" y="100" width="14" height="14" fill="#1a7a3a"/>
+  <rect x="84" y="100" width="14" height="14" fill="#1a7a3a"/>
+  <rect x="56" y="114" width="14" height="14" fill="#1a7a3a"/>
+  <rect x="70" y="114" width="14" height="14" fill="#1a7a3a"/>
+  <rect x="42" y="128" width="14" height="14" fill="#1a7a3a"/>
+  <rect x="56" y="128" width="14" height="14" fill="#1a7a3a"/>
+  <rect x="28" y="142" width="14" height="14" fill="#1a7a3a"/>
+  <rect x="42" y="142" width="14" height="14" fill="#1a7a3a"/>
+  <!-- Cursor block (amber, blinking) -->
+  <g>
+    <rect x="112" y="80" width="14" height="14" fill="#b8860b"/>
+    <rect x="126" y="80" width="14" height="14" fill="#b8860b"/>
+    <rect x="140" y="80" width="14" height="14" fill="#b8860b"/>
+    <rect x="112" y="94" width="14" height="14" fill="#b8860b"/>
+    <rect x="126" y="94" width="14" height="14" fill="#b8860b"/>
+    <rect x="140" y="94" width="14" height="14" fill="#b8860b"/>
+    <rect x="112" y="108" width="14" height="14" fill="#b8860b"/>
+    <rect x="126" y="108" width="14" height="14" fill="#b8860b"/>
+    <rect x="140" y="108" width="14" height="14" fill="#b8860b"/>
+    <animate attributeName="opacity" values="1;1;0;0" dur="1s" repeatCount="indefinite"/>
+  </g>
+  <!-- Decorative dots bottom-right -->
+  <rect x="154" y="142" width="6" height="6" fill="#1a7a3a" opacity="0.3"/>
+  <rect x="166" y="142" width="6" height="6" fill="#1a7a3a" opacity="0.3"/>
+  <rect x="154" y="154" width="6" height="6" fill="#1a7a3a" opacity="0.3"/>
+  <rect x="166" y="154" width="6" height="6" fill="#1a7a3a" opacity="0.3"/>
+</svg>
