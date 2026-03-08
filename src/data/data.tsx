@@ -17,7 +17,9 @@ import SoundCloudIcon from '../components/Icon/SoundCloudIcon';
 // import heroImage from '../images/header-background.webp';
 import heroImage from '../images/gruvbox.png';
 import brick from '../images/portfolio/Brick.png';
+import entraide from '../images/portfolio/entraide.png';
 import halalOs from '../images/portfolio/HalalOs.png';
+import loveReaction from '../images/portfolio/lr.png';
 import profilepic from '../images/profilepic.png';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -37,15 +39,15 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Mahieddine Dellabani | Tech Lead — High-Performance Java, Distributed Systems & Financial Analytics',
+  title: 'Mahieddine Dellabani | Tech Lead — Java, Distributed Systems, Web Design & Development',
   description:
-    'Tech Lead & Software Architect building high-performance Java applications, scalable distributed systems & real-time analytics for financial services. Expert in FRTB, market risk & OLAP databases.',
+    'Tech Lead & Software Architect building high-performance Java applications, scalable distributed systems, real-time financial analytics & modern websites. Available for freelance web design, development & consulting.',
   ogImageUrl: 'https://mdellabani.github.io/portfolio/og-image.png',
   twitterCardType: 'summary_large_image',
   twitterTitle:
-    'Mahieddine Dellabani | Tech Lead — High-Performance Java, Distributed Systems & Financial Analytics',
+    'Mahieddine Dellabani | Tech Lead — Java, Distributed Systems, Web Design & Development',
   twitterDescription:
-    'Tech Lead & Software Architect building high-performance Java applications, scalable distributed systems & real-time analytics for financial services.',
+    'Tech Lead & Software Architect building high-performance Java applications, distributed systems & modern websites. Available for freelance web design & development.',
   twitterImageUrl: 'https://mdellabani.github.io/portfolio/og-image.png',
 };
 
@@ -82,9 +84,8 @@ export const heroData: Hero = {
       </p>
       <p className="prose-sm text-retro-text sm:prose-base lg:prose-lg">
         Passionate about software architecture and clean code, I continuously explore emerging technologies and
-        experiment with new features to solve real-world challenges. I take a pragmatic approach to reducing technical
-        debt, optimizing performance, and designing systems that balance scalability, maintainability, and long-term
-        efficiency.
+        experiment with new features to solve real-world challenges. I also design and build modern, responsive
+        websites — from landing pages to full web applications — using React, Next.js, and Tailwind CSS.
       </p>
       <p className="prose-sm text-retro-text sm:prose-base lg:prose-lg">
         Beyond technical expertise, I have experience leading teams, mentoring engineers, and contributing to product
@@ -118,9 +119,10 @@ export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `Tech Lead and Software Architect with 10+ years building high-performance Java applications
     and scalable distributed systems. Specialized in real-time analytics, in-memory databases, and financial
-    services platforms including market risk, credit risk, and FRTB. Autonomous, curious, and experienced in
-    multicultural environments. Whether leading a team or diving deep into architecture, I build great products
-    for both users and developers: fostering innovation, promoting best practices, and delivering top-notch performance.`,
+    services platforms including market risk, credit risk, and FRTB. I also design and develop modern,
+    responsive websites and web applications. Autonomous, curious, and experienced in multicultural environments.
+    Whether leading a team, diving deep into architecture, or crafting a pixel-perfect website, I build great
+    products for both users and developers.`,
   aboutItems: [
     {label: 'Location', text: 'Saint-Medard, 64370, France', Icon: MapIcon},
     {label: 'Age', text: calculateAge('1990-11-27'), Icon: CalendarIcon},
@@ -267,6 +269,18 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
+    title: 'Love Reaction',
+    description: 'Music label website with audio player & SoundCloud RSS feed',
+    url: '#',
+    image: loveReaction,
+  },
+  {
+    title: 'Collectif Entraide',
+    description: 'First aid training business website',
+    url: '#',
+    image: entraide,
+  },
+  {
     title: 'Halal OS',
     description: 'Linx based operating system',
     url: 'https://github.com/mdellabani/HalalOS',
@@ -329,6 +343,52 @@ export const education: TimelineItem[] = [
 ];
 
 export const experience: TimelineItem[] = [
+  {
+    date: '2024 - Present',
+    location: 'Self-employed - Full Remote',
+    title: 'Freelance Web Designer & Developer',
+    content: (
+      <>
+        Designing and developing modern, responsive websites and web applications for businesses and creatives.
+        <div className="bullet">
+          <span className="bullet-icon">🎵</span>{' '}
+          <span className="bullet-text">
+            <strong>Love Reaction:</strong> Music label website featuring a custom audio player, playlist management,
+            SoundCloud RSS feed integration, and dark/light theme switching.
+          </span>
+        </div>
+        <div className="bullet">
+          <span className="bullet-icon">🩺</span>{' '}
+          <span className="bullet-text">
+            <strong>Collectif Entraide:</strong> Business website for a first aid training organization with session
+            booking, admin dashboard, email notifications, and SEO optimization.
+          </span>
+        </div>
+        <div className="bullet">
+          <span className="bullet-icon">💼</span>{' '}
+          <span className="bullet-text">
+            <strong>Personal Portfolio:</strong> This retro-themed portfolio site built with Next.js, Tailwind CSS,
+            and TypeScript.
+          </span>
+        </div>
+        <div>
+          <span className="tag">Next.js</span>
+          <span className="tag">React</span>
+          <span className="tag">TypeScript</span>
+          <span className="tag">Tailwind CSS</span>
+          <span className="tag">shadcn/ui</span>
+          <span className="tag">HeroUI</span>
+          <span className="tag">Drizzle ORM</span>
+          <span className="tag">Turso</span>
+          <span className="tag">NextAuth</span>
+          <span className="tag">Vercel</span>
+          <span className="tag">Responsive Design</span>
+          <span className="tag">SEO</span>
+          <span className="tag">Framer Motion</span>
+        </div>
+      </>
+    ),
+  },
   {
     date: '04/2025 - Present',
     location: 'Real-Time Analytical Platforms (ActiveViam Accounts) - Full Remote',

@@ -17,7 +17,7 @@ const Page: NextPage<HomepageMeta> = memo(
         <Head>
           <title>{title}</title>
           <meta content={description} name="description" />
-          <meta content="Mahieddine Dellabani, Tech Lead, Software Architect, Java, distributed systems, FRTB, market risk, credit risk, real-time analytics, OLAP, Atoti, ActiveViam, Spring Boot, microservices, scalable systems, financial analytics, in-memory database, JVM" name="keywords" />
+          <meta content="Mahieddine Dellabani, Tech Lead, Software Architect, Java, distributed systems, FRTB, market risk, credit risk, real-time analytics, OLAP, Atoti, ActiveViam, Spring Boot, microservices, scalable systems, financial analytics, in-memory database, JVM, web design, website creation, freelance web developer, Next.js, React, website development, responsive design, web development freelance France" name="keywords" />
 
           {/* Canonical */}
           <link href={canonicalUrl} key="canonical" rel="canonical" />
@@ -58,7 +58,7 @@ const Page: NextPage<HomepageMeta> = memo(
                     name: 'Mahieddine Dellabani',
                     jobTitle: 'Tech Lead | Software Architect',
                     description:
-                      'Tech Lead & Software Architect specializing in high-performance Java applications, scalable distributed systems, and real-time financial analytics.',
+                      'Tech Lead & Software Architect specializing in high-performance Java applications, scalable distributed systems, real-time financial analytics, and modern web design & development.',
                     url: BASE_URL,
                     worksFor: {
                       '@type': 'Organization',
@@ -69,6 +69,8 @@ const Page: NextPage<HomepageMeta> = memo(
                       'scalable systems', 'FRTB', 'market risk', 'credit risk', 'real-time analytics',
                       'OLAP', 'Atoti', 'ActiveViam', 'Spring Boot', 'microservices', 'Kubernetes',
                       'financial technology', 'in-memory database', 'concurrency', 'observability',
+                      'web design', 'website creation', 'React', 'Next.js', 'responsive design',
+                      'frontend development', 'web development',
                     ],
                     sameAs: [
                       'https://www.linkedin.com/in/mdellabani/',
