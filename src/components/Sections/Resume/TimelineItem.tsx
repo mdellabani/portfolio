@@ -11,12 +11,12 @@ const Timeline = memo(({item, isLast = false}: {item: TimelineItem; isLast?: boo
   const {title, date, location, content} = item;
   return (
     <div
-      className={`timeline relative flex flex-col pb-8 text-center last:pb-0 md:text-left ${isLast ? 'active' : ''}`}>
-      <div className="relative flex flex-col items-center md:flex-row md:items-start md:pl-24">
-        <div className="flex-1 text-center md:text-left">
+      className={`timeline relative flex flex-col pb-8 text-left last:pb-0 ${isLast ? 'active' : ''}`}>
+      <div className="relative flex flex-col items-start md:flex-row md:pl-24">
+        <div className="flex-1 text-left">
           <h3 className="text-xl font-bold text-retro-text">{title}</h3>
           <div className="timeline-date md:hidden">{date}</div> {/* Show date only on mobile */}
-          <div className="flex items-center justify-center gap-x-2 md:justify-start">
+          <div className="flex items-center gap-x-2">
             <span className="flex-1 text-sm font-medium italic text-retro-muted sm:flex-none">{location}</span>
           </div>
           <div className="mt-2">{content}</div>

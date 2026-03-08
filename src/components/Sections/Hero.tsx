@@ -13,7 +13,7 @@ const Hero = memo(() => {
 
   return (
     <Section noPadding sectionId={SectionId.Hero}>
-      <div className="relative flex h-screen w-screen items-center justify-center overflow-auto">
+      <div className="relative flex min-h-screen w-screen items-center justify-center py-16 sm:py-0">
         {!!imageSrc && (
           <Image
             alt={`${name} - Tech Lead and Software Architect portfolio`}
