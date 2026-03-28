@@ -65,14 +65,14 @@ const SkillIcon = memo(({icon, label}: Skill) => {
   const {basePath} = useRouter();
   const src = icon.startsWith('/') ? `${basePath}${icon}` : icon;
   return (
-  <div className="skill-icon" style={{position: 'relative', display: 'inline-block', margin: '5px'}}>
-    <img alt={label} src={src} style={{width: '35px', height: '35px', cursor: 'pointer'}} />
-    {/* Tooltip */}
-    <div className="tooltip">{label}</div>
+    <div className="skill-icon" style={{position: 'relative', display: 'inline-block', margin: '5px'}}>
+      <img alt={label} src={src} style={{width: '35px', height: '35px', cursor: 'pointer'}} />
+      {/* Tooltip */}
+      <div className="tooltip">{label}</div>
 
-    {/* CSS */}
-    <style>
-      {`
+      {/* CSS */}
+      <style>
+        {`
         .skill-icon {
           position: relative;
           display: inline-block;
@@ -99,15 +99,17 @@ const SkillIcon = memo(({icon, label}: Skill) => {
           opacity: 1;
         }
       `}
-    </style>
-  </div>
+      </style>
+    </div>
   );
 });
 
 const TechStack = memo(() => {
   return (
     <div id="tech-stack" style={{textAlign: 'center', marginBottom: '20px', marginTop: '-20px'}}>
-      <h2 className="font-pixel" style={{marginBottom: '20px', fontSize: '1rem', color: '#1a7a3a', letterSpacing: '0.1em'}}>
+      <h2
+        className="font-pixel"
+        style={{marginBottom: '20px', fontSize: '1rem', color: '#1a7a3a', letterSpacing: '0.1em'}}>
         TECH STACK
       </h2>
       <div>

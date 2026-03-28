@@ -14,19 +14,16 @@ export default function Document() {
           - https://github.com/facebook/react/issues/11538
           - https://bugs.chromium.org/p/chromium/issues/detail?id=872770 */}
         <meta content="notranslate" name="google" />
-        <meta name="google-site-verification" content="2EXJ7KKCrHBXs1yJ4WwBiggDhSPRMNOXkFHhzSF7uQU" />
-         <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-FWS71Z6WM4"
-          ></script>
-          <script>
-            {`
+        <meta content="2EXJ7KKCrHBXs1yJ4WwBiggDhSPRMNOXkFHhzSF7uQU" name="google-site-verification" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FWS71Z6WM4"></script>
+        <script>
+          {`
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'G-FWS71Z6WM4');
             `}
-          </script>
+        </script>
       </Head>
       <body className="bg-black">
         <Main />

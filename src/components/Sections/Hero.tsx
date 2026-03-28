@@ -43,7 +43,9 @@ const Hero = memo(() => {
                 <Link
                   className={classNames(
                     'flex gap-x-2 border bg-retro-surface/80 px-4 py-2 text-sm font-medium ring-offset-retro-base hover:bg-retro-base/50 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-base',
-                    primary ? 'border-retro-green text-retro-green ring-retro-green' : 'border-retro-amber text-retro-amber ring-retro-amber',
+                    primary
+                      ? 'border-retro-green text-retro-green ring-retro-green'
+                      : 'border-retro-amber text-retro-amber ring-retro-amber',
                   )}
                   href={href}
                   key={text}

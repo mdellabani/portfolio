@@ -44,8 +44,7 @@ export const homePageMeta: HomepageMeta = {
     'Tech Lead & Software Architect building high-performance Java applications, scalable distributed systems, real-time financial analytics & modern websites. Available for freelance web design, development & consulting.',
   ogImageUrl: 'https://mdellabani.github.io/portfolio/og-image.png',
   twitterCardType: 'summary_large_image',
-  twitterTitle:
-    'Mahieddine Dellabani | Tech Lead — Java, Distributed Systems, Web Design & Development',
+  twitterTitle: 'Mahieddine Dellabani | Tech Lead — Java, Distributed Systems, Web Design & Development',
   twitterDescription:
     'Tech Lead & Software Architect building high-performance Java applications, distributed systems & modern websites. Available for freelance web design & development.',
   twitterImageUrl: 'https://mdellabani.github.io/portfolio/og-image.png',
@@ -78,14 +77,14 @@ export const heroData: Hero = {
     <>
       <p className="prose-sm text-retro-text sm:prose-base lg:prose-lg">
         Seasoned Tech Lead and Software Architect with deep expertise in Java, JVM internals, and high-performance
-        database systems. I build scalable distributed systems and real-time analytics platforms for financial
-        services — from in-memory OLAP engines to market risk and FRTB solutions. Strong emphasis on concurrency,
-        observability, and production-grade deployments.
+        database systems. I build scalable distributed systems and real-time analytics platforms for financial services
+        — from in-memory OLAP engines to market risk and FRTB solutions. Strong emphasis on concurrency, observability,
+        and production-grade deployments.
       </p>
       <p className="prose-sm text-retro-text sm:prose-base lg:prose-lg">
         Passionate about software architecture and clean code, I continuously explore emerging technologies and
-        experiment with new features to solve real-world challenges. I also design and build modern, responsive
-        websites — from landing pages to full web applications — using React, Next.js, and Tailwind CSS.
+        experiment with new features to solve real-world challenges. I also design and build modern, responsive websites
+        — from landing pages to full web applications — using React, Next.js, and Tailwind CSS.
       </p>
       <p className="prose-sm text-retro-text sm:prose-base lg:prose-lg">
         Beyond technical expertise, I have experience leading teams, mentoring engineers, and contributing to product
@@ -367,8 +366,8 @@ export const experience: TimelineItem[] = [
         <div className="bullet">
           <span className="bullet-icon">💼</span>{' '}
           <span className="bullet-text">
-            <strong>Personal Portfolio:</strong> This retro-themed portfolio site built with Next.js, Tailwind CSS,
-            and TypeScript.
+            <strong>Personal Portfolio:</strong> This retro-themed portfolio site built with Next.js, Tailwind CSS, and
+            TypeScript.
           </span>
         </div>
         <div>
@@ -411,9 +410,9 @@ export const experience: TimelineItem[] = [
         <div className="bullet">
           <span className="bullet-icon">🚀</span>{' '}
           <span className="bullet-text">
-            <strong>Platform Migration:</strong> Key driver of the platform migration, delivering it end-to-end
-            while simultaneously implementing new features across <strong>PnL</strong>,{' '}
-            <strong>Sensitivity</strong>, and <strong>VaR</strong> cubes.
+            <strong>Platform Migration:</strong> Key driver of the platform migration, delivering it end-to-end while
+            simultaneously implementing new features across <strong>PnL</strong>, <strong>Sensitivity</strong>, and{' '}
+            <strong>VaR</strong> cubes.
           </span>
         </div>
         <div className="bullet">
@@ -436,10 +435,10 @@ export const experience: TimelineItem[] = [
         <div className="bullet">
           <span className="bullet-icon">🚀</span>{' '}
           <span className="bullet-text">
-            <strong>Platform Migration:</strong> Led a cross-framework migration spanning{' '}
-            <strong>Spring Boot</strong>, <strong>Spring Batch</strong>, <strong>Atoti</strong>,{' '}
-            <strong>JDK 21</strong>, and <strong>AWS libraries</strong> — ensuring continuity for all existing risk
-            calculations and reporting workflows.
+            <strong>Platform Migration:</strong> Led a cross-framework migration spanning <strong>Spring Boot</strong>,{' '}
+            <strong>Spring Batch</strong>, <strong>Atoti</strong>, <strong>JDK 21</strong>, and{' '}
+            <strong>AWS libraries</strong> — ensuring continuity for all existing risk calculations and reporting
+            workflows.
           </span>
         </div>
         <div className="bullet">
