@@ -391,7 +391,7 @@ export const experience: TimelineItem[] = [
   {
     date: '04/2025 - Present',
     location: 'Real-Time Analytical Platforms (ActiveViam Accounts) - Full Remote',
-    title: 'Tech Lead',
+    title: 'Software Architect',
     content: (
       <>
         Leading technical delivery and architecture for real-time risk analytics platforms serving Tier-1 banking
