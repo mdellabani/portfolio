@@ -18,7 +18,7 @@ const Page: NextPage<HomepageMeta> = memo(
           <title>{title}</title>
           <meta content={description} name="description" />
           <meta
-            content="Mahieddine Dellabani, Tech Lead, Software Architect, Java, distributed systems, FRTB, market risk, credit risk, real-time analytics, OLAP, Atoti, ActiveViam, Spring Boot, microservices, scalable systems, financial analytics, in-memory database, JVM, web design, website creation, freelance web developer, Next.js, React, website development, responsive design, web development freelance France"
+            content="Mahieddine Dellabani, Software Architect, Java, distributed systems, FRTB, market risk, credit risk, real-time analytics, OLAP, Atoti, ActiveViam, Spring Boot, microservices, scalable systems, financial analytics, in-memory database, JVM, web design, website creation, freelance web developer, Next.js, React, website development, responsive design, web development freelance France"
             name="keywords"
           />
 
@@ -59,9 +59,9 @@ const Page: NextPage<HomepageMeta> = memo(
                     '@type': 'Person',
                     '@id': '#person',
                     name: 'Mahieddine Dellabani',
-                    jobTitle: 'Tech Lead | Software Architect',
+                    jobTitle: 'Software Architect',
                     description:
-                      'Tech Lead & Software Architect specializing in high-performance Java applications, scalable distributed systems, real-time financial analytics, and modern web design & development.',
+                      'Software Architect specializing in high-performance Java applications, scalable distributed systems, real-time financial analytics, and modern web design & development.',
                     url: BASE_URL,
                     worksFor: {
                       '@type': 'Organization',

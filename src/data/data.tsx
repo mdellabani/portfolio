@@ -39,14 +39,14 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Mahieddine Dellabani | Tech Lead — Java, Distributed Systems, Web Design & Development',
+  title: 'Mahieddine Dellabani | Software Architect — Java, Distributed Systems, Web Design & Development',
   description:
-    'Tech Lead & Software Architect building high-performance Java applications, scalable distributed systems, real-time financial analytics & modern websites. Available for freelance web design, development & consulting.',
+    'Software Architect building high-performance Java applications, scalable distributed systems, real-time financial analytics & modern websites. Available for freelance web design, development & consulting.',
   ogImageUrl: 'https://mdellabani.github.io/portfolio/og-image.png',
   twitterCardType: 'summary_large_image',
-  twitterTitle: 'Mahieddine Dellabani | Tech Lead — Java, Distributed Systems, Web Design & Development',
+  twitterTitle: 'Mahieddine Dellabani | Software Architect — Java, Distributed Systems, Web Design & Development',
   twitterDescription:
-    'Tech Lead & Software Architect building high-performance Java applications, distributed systems & modern websites. Available for freelance web design & development.',
+    'Software Architect building high-performance Java applications, distributed systems & modern websites. Available for freelance web design & development.',
   twitterImageUrl: 'https://mdellabani.github.io/portfolio/og-image.png',
 };
 
@@ -72,11 +72,11 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
 export const heroData: Hero = {
   imageSrc: heroImage,
   name: `Mahieddine Dellabani`,
-  role: `Tech Lead & Software Architect | High-Performance Java & Distributed Systems`,
+  role: `Software Architect | High-Performance Java & Distributed Systems`,
   description: (
     <>
       <p className="prose-sm text-retro-text sm:prose-base lg:prose-lg">
-        Seasoned Tech Lead and Software Architect with deep expertise in Java, JVM internals, and high-performance
+        Seasoned Software Architect with deep expertise in Java, JVM internals, and high-performance
         database systems. I build scalable distributed systems and real-time analytics platforms for financial services
         — from in-memory OLAP engines to market risk and FRTB solutions. Strong emphasis on concurrency, observability,
         and production-grade deployments.
@@ -116,7 +116,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Tech Lead and Software Architect with 10+ years building high-performance Java applications
+  description: `Software Architect with 10+ years building high-performance Java applications
     and scalable distributed systems. Specialized in real-time analytics, in-memory databases, and financial
     services platforms including market risk, credit risk, and FRTB. I also design and develop modern,
     responsive websites and web applications. Autonomous, curious, and experienced in multicultural environments.
