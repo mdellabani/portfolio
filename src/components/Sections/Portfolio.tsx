@@ -41,7 +41,7 @@ const Portfolio = memo(() => {
 Portfolio.displayName = 'Portfolio';
 export default Portfolio;
 
-const ItemOverlay = memo(({item: {url, title}}: {item: PortfolioItem}) => {
+const ItemOverlay = memo(({item: {url, title, description}}: {item: PortfolioItem}) => {
   const [mobile, setMobile] = useState(false);
   const [showOverlay, setShowOverlay] = useState(false);
   const linkRef = useRef<HTMLAnchorElement>(null);
@@ -77,9 +77,10 @@ const ItemOverlay = memo(({item: {url, title}}: {item: PortfolioItem}) => {
       target="_blank">
       <div className="relative h-full w-full p-4">
         <div className="flex h-full w-full flex-col gap-y-2 overflow-y-auto">
-          <h3 className="text-center font-bold text-retro-base opacity-100">{title}</h3>
+          <h3 className="text-center font-bold text-retro-text opacity-100">{title}</h3>
+          <p className="text-center text-sm text-retro-text">{description}</p>
         </div>
-        <ExternalLinkIcon className="absolute bottom-1 right-1 h-4 w-4 shrink-0 text-retro-base sm:bottom-2 sm:right-2" />
+        <ExternalLinkIcon className="absolute bottom-1 right-1 h-4 w-4 shrink-0 text-retro-text sm:bottom-2 sm:right-2" />
       </div>
     </a>
   );
