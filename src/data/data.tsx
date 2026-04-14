@@ -270,13 +270,13 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Love Reaction',
     description: 'Music label website with audio player & SoundCloud RSS feed',
-    url: '#',
+    url: 'https://lovereaction.family',
     image: loveReaction,
   },
   {
     title: 'Collectif Entraide',
     description: 'First aid training business website',
-    url: '#',
+    url: 'https://collectif-entraide.fr',
     image: entraide,
   },
   {
