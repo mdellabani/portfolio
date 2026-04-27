@@ -1,0 +1,16 @@
+# Mahieddine Dellabani
+
+> Software architect with 10+ years building high-performance Java applications and scalable distributed systems. Specialized in real-time analytics, in-memory databases, and financial-services platforms (market risk, credit risk, FRTB). Also designs and ships modern responsive web applications.
+
+Personal portfolio and résumé. Based in Saint-Médard, France. Open to consulting and freelance work in backend architecture, distributed systems, and full-stack web development.
+
+## Site
+- [Portfolio home](https://mdellabani.github.io/portfolio/): single-page site covering bio, skills, work history, and selected projects
+- [Resume PDF](https://mdellabani.github.io/portfolio/assets/portfolio.pdf): printable résumé generated from the same source
+
+## Profiles
+- [GitHub](https://github.com/mdellabani): open-source projects, including HalalOS and Brick
+- [LinkedIn](https://www.linkedin.com/in/mdellabani/): work history and recommendations
+
+## Contact
+- Email: mdellabani@gmail.com
