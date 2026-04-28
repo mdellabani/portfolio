@@ -1,5 +1,6 @@
 import 'tailwindcss/tailwind.css';
 import '../globalStyles.scss';
+import '../styles/resume.css';
 
 import type {AppProps} from 'next/app';
 import {Press_Start_2P, Space_Mono} from 'next/font/google';

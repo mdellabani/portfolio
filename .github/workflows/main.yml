@@ -30,6 +30,18 @@ jobs:
           npm i
           npm run build
 
+      - name: Generate PDF resume
+        run: |
+          mkdir -p _serve/portfolio
+          cp -r out/. _serve/portfolio/
+          npx serve _serve -l 3000 --no-clipboard &
+          SERVER_PID=$!
+          npx wait-on http://localhost:3000/portfolio/resume --timeout 60000
+          RESUME_URL=http://localhost:3000/portfolio/resume \
+            PDF_OUTPUT=./out/assets/portfolio.pdf \
+            node scripts/gen-pdf.js
+          kill $SERVER_PID
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:

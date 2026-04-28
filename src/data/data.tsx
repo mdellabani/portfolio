@@ -76,10 +76,10 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-retro-text sm:prose-base lg:prose-lg">
-        Seasoned Software Architect with deep expertise in Java, JVM internals, and high-performance
-        database systems. I build scalable distributed systems and real-time analytics platforms for financial services
-        — from in-memory OLAP engines to market risk and FRTB solutions. Strong emphasis on concurrency, observability,
-        and production-grade deployments.
+        Seasoned Software Architect with deep expertise in Java, JVM internals, and high-performance database systems. I
+        build scalable distributed systems and real-time analytics platforms for financial services — from in-memory
+        OLAP engines to market risk and FRTB solutions. Strong emphasis on concurrency, observability, and
+        production-grade deployments.
       </p>
       <p className="prose-sm text-retro-text sm:prose-base lg:prose-lg">
         Passionate about software architecture and clean code, I continuously explore emerging technologies and
@@ -343,52 +343,6 @@ export const education: TimelineItem[] = [
 
 export const experience: TimelineItem[] = [
   {
-    date: '2024 - Present',
-    location: 'Self-employed - Full Remote',
-    title: 'Freelance Web Designer & Developer',
-    content: (
-      <>
-        Designing and developing modern, responsive websites and web applications for businesses and creatives.
-        <div className="bullet">
-          <span className="bullet-icon">🎵</span>{' '}
-          <span className="bullet-text">
-            <strong>Love Reaction:</strong> Music label website featuring a custom audio player, playlist management,
-            SoundCloud RSS feed integration, and dark/light theme switching.
-          </span>
-        </div>
-        <div className="bullet">
-          <span className="bullet-icon">🩺</span>{' '}
-          <span className="bullet-text">
-            <strong>Collectif Entraide:</strong> Business website for a first aid training organization with session
-            booking, admin dashboard, email notifications, and SEO optimization.
-          </span>
-        </div>
-        <div className="bullet">
-          <span className="bullet-icon">💼</span>{' '}
-          <span className="bullet-text">
-            <strong>Personal Portfolio:</strong> This retro-themed portfolio site built with Next.js, Tailwind CSS, and
-            TypeScript.
-          </span>
-        </div>
-        <div>
-          <span className="tag">Next.js</span>
-          <span className="tag">React</span>
-          <span className="tag">TypeScript</span>
-          <span className="tag">Tailwind CSS</span>
-          <span className="tag">shadcn/ui</span>
-          <span className="tag">HeroUI</span>
-          <span className="tag">Drizzle ORM</span>
-          <span className="tag">Turso</span>
-          <span className="tag">NextAuth</span>
-          <span className="tag">Vercel</span>
-          <span className="tag">Responsive Design</span>
-          <span className="tag">SEO</span>
-          <span className="tag">Framer Motion</span>
-        </div>
-      </>
-    ),
-  },
-  {
     date: '04/2025 - Present',
     location: 'Real-Time Analytical Platforms (ActiveViam Accounts) - Full Remote',
     title: 'Software Architect',
@@ -461,6 +415,52 @@ export const experience: TimelineItem[] = [
           <span className="tag">PostgreSQL</span>
           <span className="tag">Performance</span>
           <span className="tag">Team Leadership</span>
+        </div>
+      </>
+    ),
+  },
+  {
+    date: '2024 - Present',
+    location: 'Self-employed - Full Remote',
+    title: 'Freelance Web Designer & Developer',
+    content: (
+      <>
+        Designing and developing modern, responsive websites and web applications for businesses and creatives.
+        <div className="bullet">
+          <span className="bullet-icon">🎵</span>{' '}
+          <span className="bullet-text">
+            <strong>Love Reaction:</strong> Music label website featuring a custom audio player, playlist management,
+            SoundCloud RSS feed integration, and dark/light theme switching.
+          </span>
+        </div>
+        <div className="bullet">
+          <span className="bullet-icon">🩺</span>{' '}
+          <span className="bullet-text">
+            <strong>Collectif Entraide:</strong> Business website for a first aid training organization with session
+            booking, admin dashboard, email notifications, and SEO optimization.
+          </span>
+        </div>
+        <div className="bullet">
+          <span className="bullet-icon">💼</span>{' '}
+          <span className="bullet-text">
+            <strong>Personal Portfolio:</strong> This retro-themed portfolio site built with Next.js, Tailwind CSS, and
+            TypeScript.
+          </span>
+        </div>
+        <div>
+          <span className="tag">Next.js</span>
+          <span className="tag">React</span>
+          <span className="tag">TypeScript</span>
+          <span className="tag">Tailwind CSS</span>
+          <span className="tag">shadcn/ui</span>
+          <span className="tag">HeroUI</span>
+          <span className="tag">Drizzle ORM</span>
+          <span className="tag">Turso</span>
+          <span className="tag">NextAuth</span>
+          <span className="tag">Vercel</span>
+          <span className="tag">Responsive Design</span>
+          <span className="tag">SEO</span>
+          <span className="tag">Framer Motion</span>
         </div>
       </>
     ),
